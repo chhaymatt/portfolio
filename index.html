@@ -38,6 +38,8 @@
     <!-- Main -->
     <main>
 
+        
+
         <!-- Home Section -->
         <section class="home" id="home">
             <h1 class="home__heading">Hi, I'm Matthew!</h1>
@@ -162,23 +164,27 @@
             
             <div class="contact__group">
                 
-                <a target="_blank" href="https://linkedin.com/in/matthewchhay/">
+                <a class="tooltip" target="_blank" href="https://linkedin.com/in/matthewchhay/">
                     <div class="contact__pair">
+                        <span class="tooltiptext">Open LinkedIn</span>
                         <i class="fa-brands fa-linkedin-in"></i>
                         <p>@matthewchhay</p>
                     </div>
                 </a>
-                <a class="tooltip" onclick="copyText()" onmouseout="outFunc()" >
+                <a class="tooltip" onclick="copyText()" onmouseout="outFunc()">
+                    
                     <div class="contact__pair">
-                        <i class="fa-solid fa-envelope"></i>
                         <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                        <i class="fa-solid fa-envelope"></i>
+                        
                         <p>chhaymatt@gmail.com</p>
                     </div>
                 </a>   
                 
 
-                <a target="_blank" href="https://github.com/chhaymatt">
+                <a class="tooltip" target="_blank" href="https://github.com/chhaymatt">
                     <div class="contact__pair">
+                        <span class="tooltiptext">Open GitHub</span>
                         <i class="fa-brands fa-github"></i>
                         <p>@chhaymatt</p>
                     </div>

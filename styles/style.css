@@ -29,15 +29,13 @@ nav {
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
-  font-size: 2rem;
 }
 nav a {
   color: rgb(250, 250, 255);
   font-family: "Playfair Display", serif;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 nav a:hover {
-  font-size: 2rem;
   color: rgb(228, 217, 255);
 }
 
@@ -45,8 +43,8 @@ main {
   display: flex;
   margin-top: 4rem;
   flex-direction: column;
-  padding-left: 15vw;
-  padding-right: 15vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .skills {
@@ -65,13 +63,13 @@ main {
   align-items: center;
   width: 200px;
   height: 100px;
-  padding: 1rem;
+  margin: 1rem;
 }
 .skills__group--pair i {
   font-size: 5rem;
 }
 .skills__group--pair p {
-  padding: 1rem;
+  padding-bottom: 1rem;
 }
 
 .projects__buttons {
@@ -122,6 +120,7 @@ h2 {
   font-size: 2rem;
   font-family: "Playfair Display", serif;
   color: rgb(39, 52, 105);
+  text-align: center;
 }
 
 h3 {
@@ -191,11 +190,11 @@ a:hover {
   background-color: rgb(30, 39, 73);
   color: rgb(250, 250, 255);
   text-align: center;
-  border-radius: 6px;
+  border-radius: 2rem;
   padding: 0.5rem;
   position: absolute;
   z-index: 1;
-  bottom: 80%;
+  bottom: 85%;
   opacity: 0;
   transition: opacity 0.3s;
 }
