@@ -21,6 +21,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./styles/images/favicon/favicon-16x16.png">
     <link rel="manifest" href="./styles/images/favicon/site.webmanifest">
 
+    <!-- JS -->
+    <script src="./scripts/script.js"></script>
+
 </head>
 <body>
     <!-- Navigation -->
@@ -165,9 +168,10 @@
                         <p>@matthewchhay</p>
                     </div>
                 </a>
-                <a>
+                <a class="tooltip" onclick="copyText()" onmouseout="outFunc()" >
                     <div class="contact__pair">
                         <i class="fa-solid fa-envelope"></i>
+                        <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
                         <p>chhaymatt@gmail.com</p>
                     </div>
                 </a>   
