@@ -156,6 +156,7 @@ body {
     }
 
     &__pair {
+        margin: 1rem;
         width: 100px;
         height: 100px;
 
@@ -300,7 +301,6 @@ body {
     }
 
     &__pair {
-        // MIXIN B
         margin: 1rem;
         
         // MIXIN A

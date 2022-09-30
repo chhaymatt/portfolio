@@ -134,6 +134,7 @@ body {
   padding: 0;
 }
 .skills__pair {
+  margin: 1rem;
   width: 100px;
   height: 100px;
   display: flex;
