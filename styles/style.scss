@@ -5,23 +5,14 @@
     margin: 0;
     padding: 0;
     font-family: typography.$text-font;
-    //border: 1px solid palette.$primary-color; // TS
+    //border: 1px solid palette.$primary-color; // check margins/paddings
 }
 
 body {
     background-color: palette.$bg-color;
 }
 
-.home {
-    img {
-        border-radius: 1rem;
-        height: 20rem;
-        width: 20rem;
-        border: 0.2rem solid palette.$tertiary-color;
-    }
-}
-
-nav {
+.nav {
     height: 4rem;
     background-color: palette.$gunmetal;
     display: flex;
@@ -32,11 +23,11 @@ nav {
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
 
-
-    a {
+    &__link {
         color: palette.$tertiary-color;
         font-family: typography.$heading-font;
         font-size: 1rem;
+        text-decoration: none;
 
         &:hover {
             color: palette.$bg-color;
@@ -44,7 +35,7 @@ nav {
     }
 }
 
-main {
+.main {
     display: flex;
     margin-top: 4rem; // Should be the same as height of nav;
     flex-direction: column;
@@ -52,16 +43,94 @@ main {
     padding-right: 5vw;
 }
 
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
 
+    &__heading {
+        text-align: center;
+        font-size: 5rem;
+        margin-bottom: 1rem;
+        font-family: typography.$heading-font;
+        color: palette.$primary-color;
+    }
+
+    &__subheading {
+        font-size: 2rem;
+        font-family: typography.$heading-font;
+        color: palette.$secondary-color;
+        text-align: center;
+    }
+
+    &__image {
+        margin-top: 1rem;
+        border-radius: 1rem;
+        height: 20rem;
+        width: 20rem;
+        border: 0.2rem solid palette.$tertiary-color;
+    }
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+
+    &__heading {
+        text-align: center;
+        font-size: 5rem;
+        margin-bottom: 1rem;
+        font-family: typography.$heading-font;
+        color: palette.$primary-color;
+    }
+
+    &__group {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+
+        &--text {
+            display: flex;
+            width: 40vw;
+            flex-wrap: wrap;
+        }
+    }
+}
 
 .skills {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+
+    &__heading {
+        text-align: center;
+        font-size: 5rem;
+        margin-bottom: 1rem;
+        font-family: typography.$heading-font;
+        color: palette.$primary-color;
+    }
+    
+    &__subheading {
+        font-size: 2rem;
+        font-family: typography.$heading-font;
+        color: palette.$secondary-color;
+        text-align: center;
+    }
+
     &__group {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        
+
+
         &--pair {
             display: flex;
             flex-direction: column;
@@ -71,17 +140,11 @@ main {
             height: 100px;
             margin: 1rem;
             
-            i {
+            &--icon {
                 font-size: 5rem;
-                
-                
-            }
+                color: palette.$text-color;
+            }    
 
-            p {
-                padding-bottom: 1rem;
-            }
-    
-    
         }
     }
     
@@ -89,82 +152,87 @@ main {
 
 
 .projects {
-    &__buttons {
-        margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+
+    &__heading {
+        text-align: center;
+        font-size: 5rem;
+        margin-bottom: 1rem;
+        font-family: typography.$heading-font;
+        color: palette.$primary-color;
     }
 
     &__group {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-    }
 
-    &__article {
-        margin: 1rem;
-        width: 300px;
-        padding: 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        &--article {
+            margin: 1rem;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            h2 {
+                font-size: 2rem;
+                font-family: typography.$heading-font;
+                color: palette.$secondary-color;
+                text-align: center;
+            
+            }
 
-        p {
-            margin-bottom: 1rem;
-        }
-
-        img {
-            border-radius: 1rem;
-            height: 18rem;
-            width: 18rem;
-            border: 0.2rem solid palette.$tertiary-color;
-        }
-
-        a {
-            color: palette.$text-color;
-            text-decoration: none; 
-            font-size: 2rem;
-         
-            &:hover {
-             font-size: 2rem;
-             color: palette.$secondary-color;
+            img {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                border-radius: 1rem;
+                height: 18rem;
+                width: 18rem;
+                border: 0.2rem solid palette.$tertiary-color;
+            }
+    
+            a {
+                color: palette.$text-color;
+                text-decoration: none; 
+                font-size: 2rem;
+             
+                &:hover {
+                 font-size: 2rem;
+                 color: palette.$secondary-color;
+                }
              }
-         }
-         
+             
+        }
     }
-}
 
-h1 {
-    text-align: center;
-    font-size: 5rem;
-    margin-bottom: 1rem;
-    font-family: typography.$heading-font;
-    color: palette.$primary-color;
-
-}
-
-h2 {
-    font-size: 2rem;
-    font-family: typography.$heading-font;
-    color: palette.$secondary-color;
-    text-align: center;
-
-}
-
-h3 {
-    font-size: 1rem;
-    font-family: typography.$heading-font;
-}
-
-p {
-    font-size: 1rem;
 }
 
 .contact {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+
+    &__heading {
+        text-align: center;
+        font-size: 5rem;
+        margin-bottom: 1rem;
+        font-family: typography.$heading-font;
+        color: palette.$primary-color;
+    }
+
+
     &__group {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        
         a {
             color: palette.$text-color;
             text-decoration: none; 
@@ -175,11 +243,13 @@ p {
              color: palette.$secondary-color;
              }
          }
-         
+
+        p {
+            font-size: 1rem;
+        }
     }
 
     &__pair {
-        width: 10rem;
         padding: 1rem;
         margin: 1rem;
         display: flex;
@@ -190,33 +260,14 @@ p {
 
 }
 
-
 .footer {
-    
     &__text {
         padding: 1rem;
+        margin: 1rem;
         text-align: center;
     }
 }
 
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 5rem;
-}
-
-a {
-   color: palette.$text-color;
-   text-decoration: none; 
-   font-size: 1rem;
-
-   &:hover {
-    font-size: 1rem;
-    color: palette.$secondary-color;
-    }
-}
 
 
 // Tool tip

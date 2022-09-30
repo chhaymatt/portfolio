@@ -27,16 +27,16 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+    <nav class="nav">
+        <a class="nav__link" href="#home">Home</a>
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#skills">Skills</a>
+        <a class="nav__link" href="#projects">Projects</a>
+        <a class="nav__link" href="#contact">Contact</a>
     </nav>
 
     <!-- Main -->
-    <main>
+    <main class="main">
 
         
 
@@ -44,54 +44,55 @@
         <section class="home" id="home">
             <h1 class="home__heading">Hi, I'm Matthew!</h1>
             <h2 class="home__subheading">Software Developer</h2>
-            <br>
-            <img src="./styles/images/matt.jpeg" alt="Matthew Chhay">
+            <img class="home__image" src="./styles/images/matt.jpeg" alt="Matthew Chhay">
         </section>
 
         <!-- About Section -->
-        <section id="about">
+        <section class="about" id="about">
             <h1 class="about__heading">About</h1>
-            <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sed repellendus perferendis natus suscipit dicta, minima reiciendis! Fugiat, adipisci repellendus, unde eligendi nesciunt praesentium sunt exercitationem itaque consequuntur, doloremque non!</p>
+            <div class="about__group">
+                <p class="about__group--text">I'm Matthew, I am a civil engineer turned Software Developer based in Adelaide. I discovered I love solving problems with technology. I am eager to make a difference to people. In my spare time, you'll see me playing video games or riding my bike towards the beach.</p>
+            </div>
             
         </section>
 
         <!-- Skills Section -->
-        <section id="skills">
+        <section class="skills" id="skills">
             <h1 class="skills__heading">Skills</h1>
+            <h2 class="skills__subheading">I can code in</h2>
             <div class="skills__group">
                 <div class="skills__group--pair">
-                    <i class="fa-brands fa-html5"></i>
+                    <i class="skills__group--pair--icon fa-brands fa-html5"></i>
                     <p>HTML</p>
                 </div>
                 <div class="skills__group--pair">
-                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="skills__group--pair--icon fa-brands fa-css3-alt"></i>
                     <p>CSS</p>
                 </div>
                 <div class="skills__group--pair">
-                    <i class="fa-brands fa-sass"></i>
+                    <i class="skills__group--pair--icon fa-brands fa-sass"></i>
                     <p>SCSS</p>
                 </div>
                 <div class="skills__group--pair">
-                    <i class="fa-brands fa-git"></i>
+                    <i class="skills__group--pair--icon fa-brands fa-git"></i>
                     <p >Git</p>
                 </div>
                 <div class="skills__group--pair">
-                    <i class="fa-brands fa-square-js"></i>
+                    <i class="skills__group--pair--icon fa-brands fa-square-js"></i>
                     <p>JS</p>
                 </div>
             </div>
-
         </section>
 
         <!-- Projects Section -->
         <section class="projects" id="projects">
             <h1 class="projects__heading">Projects</h1>
             <div class="projects__group">
-                <article class="projects__article">
-                    <h2>Calculator</h1>
+                <article class="projects__group--article">
+                    <h2>Calculator</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                     <img src="./styles/images/blank-image.png" alt="Calculator">
-                    <div class="projects__buttons">
+                    <div>
                         <a href="#projects">
                             <i class="fa-solid fa-circle-play"></i>
                         </a>
@@ -100,11 +101,11 @@
                         </a>
                     </div>
                 </article>
-                <article class="projects__article">
-                    <h2>Morse Translator</h1>
+                <article class="projects__group--article">
+                    <h2>Morse Translator</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                     <img src="./styles/images/blank-image.png" alt="Morse Translator">
-                    <div class="projects__buttons">
+                    <div>
                         <a href="#projects">
                             <i class="fa-solid fa-circle-play"></i>
                         </a>
@@ -114,11 +115,11 @@
                     </div>
                 </article>
 
-                <article class="projects__article">
-                    <h2>e-Shop</h1>
+                <article class="projects__group--article">
+                    <h2>e-Shop</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <img src="./styles/images/blank-image.png" alt="e-Shop">
-                    <div class="projects__buttons">
+                    <div>
                         <a href="#projects">
                             <i class="fa-solid fa-circle-play"></i>
                         </a>
@@ -128,11 +129,11 @@
                     </div>
                 </article>
 
-                <article class="projects__article">
+                <article class="projects__group--article">
                     <h2>Project Title</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <img src="./styles/images/blank-image.png" alt="???">
-                    <div class="projects__buttons">
+                    <div>
                         <a href="#projects">
                             <i class="fa-solid fa-circle-play"></i>
                         </a>
@@ -142,11 +143,11 @@
                     </div>
                 </article>
 
-                <article class="projects__article">
+                <article class="projects__group--article">
                     <h2>Project Title</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <img src="./styles/images/blank-image.png" alt="???">
-                    <div class="projects__buttons">
+                    <div>
                         <a href="#projects">
                             <i class="fa-solid fa-circle-play"></i>
                         </a>
@@ -176,12 +177,10 @@
                     <div class="contact__pair">
                         <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
                         <i class="fa-solid fa-envelope"></i>
-                        
                         <p>chhaymatt@gmail.com</p>
                     </div>
                 </a>   
                 
-
                 <a class="tooltip" target="_blank" href="https://github.com/chhaymatt">
                     <div class="contact__pair">
                         <span class="tooltiptext">Open GitHub</span>
