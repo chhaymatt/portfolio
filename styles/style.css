@@ -100,6 +100,7 @@ body {
   padding: 0;
 }
 .about__text {
+  color: rgb(48, 52, 63);
   width: 40vw;
 }
 
@@ -142,8 +143,11 @@ body {
   align-items: center;
   padding: 1rem;
 }
-.skills__pair--icon {
+.skills__icon {
   font-size: 5rem;
+  color: rgb(48, 52, 63);
+}
+.skills__text {
   color: rgb(48, 52, 63);
 }
 
@@ -179,12 +183,6 @@ body {
   align-items: center;
   padding: 1rem;
 }
-.projects__article h2 {
-  font-size: 2rem;
-  font-family: "Playfair Display", serif;
-  color: rgb(39, 52, 105);
-  text-align: center;
-}
 .projects__article img {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -201,6 +199,15 @@ body {
 .projects__article a:hover {
   font-size: 2rem;
   color: rgb(39, 52, 105);
+}
+.projects__subheading {
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+  color: rgb(39, 52, 105);
+  text-align: center;
+}
+.projects__text {
+  color: rgb(48, 52, 63);
 }
 
 .contact {

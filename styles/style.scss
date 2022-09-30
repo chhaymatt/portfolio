@@ -116,6 +116,7 @@ body {
     }
 
     &__text {
+        color: palette.$text-color;
         width: 40vw;
     }
 }
@@ -165,12 +166,15 @@ body {
         justify-content: center;
         align-items: center;
         padding: 1rem;
-        
-        &--icon {
-            font-size: 5rem;
-            color: palette.$text-color;
-        }    
 
+    }
+    &__icon {
+        font-size: 5rem;
+        color: palette.$text-color;
+    }
+    
+    &__text {
+        color: palette.$text-color;
     }
     
 }
@@ -214,13 +218,7 @@ body {
         align-items: center;
         padding: 1rem;
         
-        h2 {
-            font-size: 2rem;
-            font-family: typography.$heading-font;
-            color: palette.$secondary-color;
-            text-align: center;
         
-        }
 
         img {
             margin-top: 1rem;
@@ -242,6 +240,18 @@ body {
             }
          }
          
+    }
+
+    &__subheading {
+        font-size: 2rem;
+        font-family: typography.$heading-font;
+        color: palette.$secondary-color;
+        text-align: center;
+    
+    }
+
+    &__text {
+        color: palette.$text-color;
     }
 
 }
