@@ -1,49 +1,13 @@
 @use "./partials/palette";
 @use "./partials/typography";
-
-// Styles for flex and padding
-@mixin flex-padding-modifier($wrap, $direction, $justify, $align-items, $padding) {
-    display: flex;
-    flex-wrap: $wrap;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align-items;
-    padding: $padding;
-}
-
-// Styles for headings, subheadings and paragraph text
-@mixin text-modifier() {
-    &__heading {
-        text-align: center;
-        font-size: 5rem;
-        margin-bottom: 1rem;
-        font-family: typography.$heading-font;
-        color: palette.$primary-color;
-    }
-
-    &__subheading {
-        font-size: 2rem;
-        font-family: typography.$heading-font;
-        color: palette.$secondary-color;
-        text-align: center;
-    }
-
-    &__text {
-        color: palette.$text-color;
-        
-        &--squish {
-            width: 50vw;
-        }
-    }
-
-}
+@use "./partials/mixin";
 
 * {
     margin: 0;
     padding: 0;
     font-family: typography.$text-font;
     scroll-behavior: smooth;
-    border: 1px solid palette.$primary-color; // check margins/paddings
+    //border: 1px solid palette.$primary-color; // check margins/paddings
     
 }
 
@@ -52,7 +16,7 @@ body {
 }
 
 .nav {
-    @include flex-padding-modifier(nowrap, row, space-evenly, center, 0);
+    @include mixin.flex-padding-modifier(nowrap, row, space-evenly, center, 0);
     height: 4rem;
     background-color: palette.$gunmetal;
     
@@ -74,13 +38,13 @@ body {
 }
 
 .main {
-    @include flex-padding-modifier(nowrap, column, center, center, 0);
+    @include mixin.flex-padding-modifier(nowrap, column, center, center, 0);
     margin-top: 4rem; // Should be the same as height of nav;    
 }
 
 .home {
-    @include flex-padding-modifier(nowrap, column, center, center, 5rem);
-    @include text-modifier();
+    @include mixin.flex-padding-modifier(nowrap, column, center, center, 5rem);
+    @include mixin.text-modifier();
 
     &__image {
         margin-top: 1rem;
@@ -92,24 +56,24 @@ body {
 }
 
 .about {
-    @include flex-padding-modifier(nowrap, column, center, center, 5rem);
-    @include text-modifier();
+    @include mixin.flex-padding-modifier(nowrap, column, center, center, 5rem);
+    @include mixin.text-modifier();
 
     &__group {
-        @include flex-padding-modifier(wrap, row, center, center, 0);
+        @include mixin.flex-padding-modifier(wrap, row, center, center, 0);
     }
 }
 
 .skills {
-    @include flex-padding-modifier(nowrap, column, center, center, 5rem);
-    @include text-modifier();
+    @include mixin.flex-padding-modifier(nowrap, column, center, center, 5rem);
+    @include mixin.text-modifier();
 
     &__group {
-        @include flex-padding-modifier(wrap, row, center, center, 0);
+        @include mixin.flex-padding-modifier(wrap, row, center, center, 0);
     }
 
     &__pair {
-        @include flex-padding-modifier(nowrap, column, center, center, 1rem);
+        @include mixin.flex-padding-modifier(nowrap, column, center, center, 1rem);
         margin: 1rem;
         width: 100px;
         height: 100px;
@@ -124,15 +88,15 @@ body {
 
 
 .projects {
-    @include flex-padding-modifier(nowrap, column, center, center, 5rem);
-    @include text-modifier();
+    @include mixin.flex-padding-modifier(nowrap, column, center, center, 5rem);
+    @include mixin.text-modifier();
 
     &__group {
-        @include flex-padding-modifier(wrap, row, center, center, 0);
+        @include mixin.flex-padding-modifier(wrap, row, center, center, 0);
     }
 
     &__article {
-        @include flex-padding-modifier(nowrap, column, center, center, 1rem);
+        @include mixin.flex-padding-modifier(nowrap, column, center, center, 1rem);
         width: 300px;
         
         img {
@@ -159,10 +123,11 @@ body {
 }
 
 .contact {
-    @include flex-padding-modifier(nowrap, column, center, center, 5rem);
-    @include text-modifier();
+    @include mixin.flex-padding-modifier(nowrap, column, center, center, 5rem);
+    @include mixin.text-modifier();
+
     &__group {
-        @include flex-padding-modifier(wrap, row, center, center, 0);
+        @include mixin.flex-padding-modifier(wrap, row, center, center, 0);
         
         a {
             color: palette.$text-color;
@@ -181,7 +146,7 @@ body {
     }
 
     &__pair {
-        @include flex-padding-modifier(wrap, column, center, center, 1rem);
+        @include mixin.flex-padding-modifier(wrap, column, center, center, 1rem);
         margin: 1rem;
     }
 

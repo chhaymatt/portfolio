@@ -1,0 +1,38 @@
+@use "./palette";
+@use "./typography";
+// Styles for flex and padding
+@mixin flex-padding-modifier($wrap, $direction, $justify, $align-items, $padding) {
+    display: flex;
+    flex-wrap: $wrap;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align-items;
+    padding: $padding;
+}
+
+// Styles for headings, subheadings and paragraph text
+@mixin text-modifier() {
+    &__heading {
+        text-align: center;
+        font-size: 5rem;
+        margin-bottom: 1rem;
+        font-family: typography.$heading-font;
+        color: palette.$primary-color;
+    }
+
+    &__subheading {
+        font-size: 2rem;
+        font-family: typography.$heading-font;
+        color: palette.$secondary-color;
+        text-align: center;
+    }
+
+    &__text {
+        color: palette.$text-color;
+        
+        &--squish {
+            width: 50vw;
+        }
+    }
+
+}
