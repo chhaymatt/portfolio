@@ -14,18 +14,18 @@ body {
 }
 
 .nav {
-  height: 4rem;
-  background-color: rgb(48, 52, 63);
-  overflow: hidden;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   padding: 0;
+  height: 4rem;
+  background-color: rgb(48, 52, 63);
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
 }
 .nav__link {
   color: rgb(250, 250, 255);
@@ -38,13 +38,13 @@ body {
 }
 
 .main {
-  margin-top: 4rem;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   justify-content: center;
-  align-items: none;
+  align-items: center;
   padding: 0;
+  margin-top: 4rem;
 }
 
 .home {
@@ -53,7 +53,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5rem;
+  padding: 2rem;
 }
 .home__heading {
   text-align: center;
@@ -82,7 +82,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5rem;
+  padding: 2rem;
 }
 .about__heading {
   text-align: center;
@@ -110,7 +110,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5rem;
+  padding: 2rem;
 }
 .skills__heading {
   text-align: center;
@@ -134,15 +134,15 @@ body {
   padding: 0;
 }
 .skills__pair {
-  margin: 1rem;
-  width: 100px;
-  height: 100px;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  margin: 1rem;
+  width: 100px;
+  height: 100px;
 }
 .skills__icon {
   font-size: 5rem;
@@ -158,7 +158,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5rem;
+  padding: 2rem;
 }
 .projects__heading {
   text-align: center;
@@ -176,13 +176,13 @@ body {
   padding: 0;
 }
 .projects__article {
-  width: 300px;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  width: 300px;
 }
 .projects__article img {
   margin-top: 1rem;
@@ -217,7 +217,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5rem;
+  padding: 2rem;
 }
 .contact__heading {
   text-align: center;
@@ -247,13 +247,13 @@ body {
   font-size: 1rem;
 }
 .contact__pair {
-  margin: 1rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  margin: 1rem;
 }
 
 .footer__text {

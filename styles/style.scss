@@ -1,6 +1,17 @@
 @use "./partials/palette";
 @use "./partials/typography";
 
+
+@mixin flex-padding-modifier($wrap, $direction, $justify, $align-items, $padding) {
+    display: flex;
+    flex-wrap: $wrap;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align-items;
+    padding: $padding;
+}
+    
+
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +26,7 @@ body {
 }
 
 .nav {
+    @include flex-padding-modifier(nowrap, row, space-evenly, center, 0);
     height: 4rem;
     background-color: palette.$gunmetal;
     
@@ -22,14 +34,6 @@ body {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
-
-    // MIXIN A
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 0;
 
     &__link {
         color: palette.$tertiary-color;
@@ -44,26 +48,12 @@ body {
 }
 
 .main {
+    @include flex-padding-modifier(nowrap, column, center, center, 0);
     margin-top: 4rem; // Should be the same as height of nav;    
-
-    // MIXIN A
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: none;
-    padding: 0;
-
 }
 
 .home {
-    // MIXIN A
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5rem;
+    @include flex-padding-modifier(nowrap, column, center, center, 2rem);
 
     &__heading {
         text-align: center;
@@ -90,12 +80,7 @@ body {
 }
 
 .about {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5rem;
+    @include flex-padding-modifier(nowrap, column, center, center, 2rem);
 
     &__heading {
         text-align: center;
@@ -106,13 +91,7 @@ body {
     }
 
     &__group {
-        // MIXIN A
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
+        @include flex-padding-modifier(wrap, row, center, center, 0);
     }
 
     &__text {
@@ -122,13 +101,7 @@ body {
 }
 
 .skills {
-    // MIXIN A
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5rem;
+    @include flex-padding-modifier(nowrap, column, center, center, 2rem);
 
     &__heading {
         text-align: center;
@@ -146,29 +119,16 @@ body {
     }
 
     &__group {
-        // MIXIN A
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
+        @include flex-padding-modifier(wrap, row, center, center, 0);
     }
 
     &__pair {
+        @include flex-padding-modifier(nowrap, column, center, center, 1rem);
         margin: 1rem;
         width: 100px;
         height: 100px;
-
-        // MIXIN A
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem;
-
     }
+
     &__icon {
         font-size: 5rem;
         color: palette.$text-color;
@@ -182,13 +142,7 @@ body {
 
 
 .projects {
-    // MIXIN A
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5rem;
+    @include flex-padding-modifier(nowrap, column, center, center, 2rem);
 
     &__heading {
         text-align: center;
@@ -199,26 +153,12 @@ body {
     }
 
     &__group {
-        // MIXIN A
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
+        @include flex-padding-modifier(wrap, row, center, center, 0);
     }
 
     &__article {
+        @include flex-padding-modifier(nowrap, column, center, center, 1rem);
         width: 300px;
-
-        // MIXIN A
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem;
-        
         
 
         img {
@@ -258,13 +198,7 @@ body {
 }
 
 .contact {
-    // MIXIN A
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5rem;
+    @include flex-padding-modifier(nowrap, column, center, center, 2rem);
 
     &__heading {
         text-align: center;
@@ -276,13 +210,7 @@ body {
 
 
     &__group {
-        // MIXIN A
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
+        @include flex-padding-modifier(wrap, row, center, center, 0);
         
         a {
             color: palette.$text-color;
@@ -301,23 +229,14 @@ body {
     }
 
     &__pair {
+        @include flex-padding-modifier(wrap, column, center, center, 1rem);
         margin: 1rem;
-        
-        // MIXIN A
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem;
-
     }
 
 }
 
 .footer {
     &__text {
-         // MIXIN B
         padding: 1rem;
         margin: 1rem;
 
