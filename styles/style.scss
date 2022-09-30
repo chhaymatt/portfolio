@@ -5,7 +5,9 @@
     margin: 0;
     padding: 0;
     font-family: typography.$text-font;
-    //border: 1px solid palette.$primary-color; // check margins/paddings
+    scroll-behavior: smooth;
+    border: 1px solid palette.$primary-color; // check margins/paddings
+    
 }
 
 body {
@@ -15,13 +17,19 @@ body {
 .nav {
     height: 4rem;
     background-color: palette.$gunmetal;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    
     overflow: hidden;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+
+    // MIXIN A
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
 
     &__link {
         color: palette.$tertiary-color;
@@ -36,18 +44,25 @@ body {
 }
 
 .main {
+    margin-top: 4rem; // Should be the same as height of nav;    
+
+    // MIXIN A
     display: flex;
-    margin-top: 4rem; // Should be the same as height of nav;
+    flex-wrap: nowrap;
     flex-direction: column;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    justify-content: center;
+    align-items: none;
+    padding: 0;
+
 }
 
 .home {
+    // MIXIN A
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     padding: 5rem;
 
     &__heading {
@@ -76,9 +91,10 @@ body {
 
 .about {
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     padding: 5rem;
 
     &__heading {
@@ -90,24 +106,27 @@ body {
     }
 
     &__group {
+        // MIXIN A
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
-        flex-direction: column;
+        padding: 0;
+    }
 
-        &--text {
-            display: flex;
-            width: 40vw;
-            flex-wrap: wrap;
-        }
+    &__text {
+        width: 40vw;
     }
 }
 
 .skills {
+    // MIXIN A
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     padding: 5rem;
 
     &__heading {
@@ -126,36 +145,44 @@ body {
     }
 
     &__group {
+        // MIXIN A
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
         justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
 
+    &__pair {
+        width: 100px;
+        height: 100px;
 
-        &--pair {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 200px;
-            height: 100px;
-            margin: 1rem;
-            
-            &--icon {
-                font-size: 5rem;
-                color: palette.$text-color;
-            }    
+        // MIXIN A
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        
+        &--icon {
+            font-size: 5rem;
+            color: palette.$text-color;
+        }    
 
-        }
     }
     
 }
 
 
 .projects {
+    // MIXIN A
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     padding: 5rem;
 
     &__heading {
@@ -167,56 +194,65 @@ body {
     }
 
     &__group {
+        // MIXIN A
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
         justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
 
-        &--article {
-            margin: 1rem;
-            width: 300px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            
-            h2 {
-                font-size: 2rem;
-                font-family: typography.$heading-font;
-                color: palette.$secondary-color;
-                text-align: center;
-            
-            }
+    &__article {
+        width: 300px;
 
-            img {
-                margin-top: 1rem;
-                margin-bottom: 1rem;
-                border-radius: 1rem;
-                height: 18rem;
-                width: 18rem;
-                border: 0.2rem solid palette.$tertiary-color;
-            }
-    
-            a {
-                color: palette.$text-color;
-                text-decoration: none; 
-                font-size: 2rem;
-             
-                &:hover {
-                 font-size: 2rem;
-                 color: palette.$secondary-color;
-                }
-             }
-             
+        // MIXIN A
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        
+        h2 {
+            font-size: 2rem;
+            font-family: typography.$heading-font;
+            color: palette.$secondary-color;
+            text-align: center;
+        
         }
+
+        img {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 1rem;
+            height: 18rem;
+            width: 18rem;
+            border: 0.2rem solid palette.$tertiary-color;
+        }
+
+        a {
+            color: palette.$text-color;
+            text-decoration: none; 
+            font-size: 2rem;
+         
+            &:hover {
+             font-size: 2rem;
+             color: palette.$secondary-color;
+            }
+         }
+         
     }
 
 }
 
 .contact {
+    // MIXIN A
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     padding: 5rem;
 
     &__heading {
@@ -229,9 +265,13 @@ body {
 
 
     &__group {
+        // MIXIN A
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
         justify-content: center;
+        align-items: center;
+        padding: 0;
         
         a {
             color: palette.$text-color;
@@ -242,7 +282,7 @@ body {
              font-size: 5rem;
              color: palette.$secondary-color;
              }
-         }
+        }
 
         p {
             font-size: 1rem;
@@ -250,11 +290,16 @@ body {
     }
 
     &__pair {
-        padding: 1rem;
+        // MIXIN B
         margin: 1rem;
+        
+        // MIXIN A
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
+        padding: 1rem;
 
     }
 
@@ -262,8 +307,10 @@ body {
 
 .footer {
     &__text {
+         // MIXIN B
         padding: 1rem;
         margin: 1rem;
+
         text-align: center;
         color: palette.$text-color;
     }
@@ -280,9 +327,9 @@ body {
     cursor: pointer;
 
 
-  }
+}
   
-  .tooltip .tooltiptext {
+.tooltip .tooltiptext {
     visibility: hidden;
     font-size: 1rem;
     background-color: palette.$primary-color;
@@ -296,9 +343,9 @@ body {
     opacity: 0;
     transition: opacity 0.3s;
   
-  }
+}
   
-  .tooltip .tooltiptext::after {
+.tooltip .tooltiptext::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -308,9 +355,9 @@ body {
     border-style: solid;
     border-color: palette.$primary-color transparent transparent transparent;
 
-  }
+}
   
-  .tooltip:hover .tooltiptext {
+.tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
-  }
+}

@@ -6,6 +6,8 @@
   margin: 0;
   padding: 0;
   font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+  border: 1px solid rgb(30, 39, 73);
 }
 
 body {
@@ -15,13 +17,16 @@ body {
 .nav {
   height: 4rem;
   background-color: rgb(48, 52, 63);
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   overflow: hidden;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
 }
 .nav__link {
   color: rgb(250, 250, 255);
@@ -34,18 +39,21 @@ body {
 }
 
 .main {
-  display: flex;
   margin-top: 4rem;
+  display: flex;
+  flex-wrap: nowrap;
   flex-direction: column;
-  padding-left: 5vw;
-  padding-right: 5vw;
+  justify-content: center;
+  align-items: none;
+  padding: 0;
 }
 
 .home {
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   padding: 5rem;
 }
 .home__heading {
@@ -71,9 +79,10 @@ body {
 
 .about {
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   padding: 5rem;
 }
 .about__heading {
@@ -86,20 +95,21 @@ body {
 .about__group {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  flex-direction: column;
+  padding: 0;
 }
-.about__group--text {
-  display: flex;
+.about__text {
   width: 40vw;
-  flex-wrap: wrap;
 }
 
 .skills {
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   padding: 5rem;
 }
 .skills__heading {
@@ -118,27 +128,32 @@ body {
 .skills__group {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  padding: 0;
 }
-.skills__group--pair {
+.skills__pair {
+  width: 100px;
+  height: 100px;
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 100px;
-  margin: 1rem;
+  padding: 1rem;
 }
-.skills__group--pair--icon {
+.skills__pair--icon {
   font-size: 5rem;
   color: rgb(48, 52, 63);
 }
 
 .projects {
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   padding: 5rem;
 }
 .projects__heading {
@@ -151,23 +166,27 @@ body {
 .projects__group {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  padding: 0;
 }
-.projects__group--article {
-  margin: 1rem;
+.projects__article {
   width: 300px;
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
-.projects__group--article h2 {
+.projects__article h2 {
   font-size: 2rem;
   font-family: "Playfair Display", serif;
   color: rgb(39, 52, 105);
   text-align: center;
 }
-.projects__group--article img {
+.projects__article img {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border-radius: 1rem;
@@ -175,21 +194,22 @@ body {
   width: 18rem;
   border: 0.2rem solid rgb(250, 250, 255);
 }
-.projects__group--article a {
+.projects__article a {
   color: rgb(48, 52, 63);
   text-decoration: none;
   font-size: 2rem;
 }
-.projects__group--article a:hover {
+.projects__article a:hover {
   font-size: 2rem;
   color: rgb(39, 52, 105);
 }
 
 .contact {
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   padding: 5rem;
 }
 .contact__heading {
@@ -202,7 +222,10 @@ body {
 .contact__group {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  padding: 0;
 }
 .contact__group a {
   color: rgb(48, 52, 63);
@@ -217,11 +240,13 @@ body {
   font-size: 1rem;
 }
 .contact__pair {
-  padding: 1rem;
   margin: 1rem;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 
 .footer__text {
