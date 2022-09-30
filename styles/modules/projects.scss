@@ -1,0 +1,38 @@
+@use "../partials/typography";
+@use "../partials/palette";
+@use "../partials/mixin"; 
+
+.projects {
+    @include mixin.flex-padding-modifier(nowrap, column, center, center, 5rem);
+    @include mixin.text-modifier();
+
+    &__group {
+        @include mixin.flex-padding-modifier(wrap, row, center, center, 0);
+    }
+
+    &__article {
+        @include mixin.flex-padding-modifier(nowrap, column, center, center, 1rem);
+        width: 300px;
+        
+        img {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 1rem;
+            height: 18rem;
+            width: 18rem;
+            border: 0.2rem solid palette.$tertiary-color;
+        }
+
+        a {
+            color: palette.$text-color;
+            text-decoration: none; 
+            font-size: 2rem;
+         
+            &:hover {
+             font-size: 2rem;
+             color: palette.$secondary-color;
+            }
+         }
+         
+    }
+}

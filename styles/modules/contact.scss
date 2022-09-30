@@ -1,0 +1,33 @@
+@use "../partials/typography";
+@use "../partials/palette";
+@use "../partials/mixin";
+
+.contact {
+    @include mixin.flex-padding-modifier(nowrap, column, center, center, 5rem);
+    @include mixin.text-modifier();
+
+    &__group {
+        @include mixin.flex-padding-modifier(wrap, row, center, center, 0);
+        
+        a {
+            color: palette.$text-color;
+            text-decoration: none; 
+            font-size: 5rem;
+         
+            &:hover {
+             font-size: 5rem;
+             color: palette.$secondary-color;
+             }
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    &__pair {
+        @include mixin.flex-padding-modifier(wrap, column, center, center, 1rem);
+        margin: 1rem;
+    }
+
+}

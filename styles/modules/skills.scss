@@ -1,0 +1,34 @@
+@use "../partials/typography";
+@use "../partials/palette";
+@use "../partials/mixin"; 
+
+.skills {
+    @include mixin.flex-padding-modifier(nowrap, column, center, center, 5rem);
+    @include mixin.text-modifier();
+
+    &__group {
+        @include mixin.flex-padding-modifier(wrap, row, center, center, 0);
+    }
+
+    &__pair {
+        @include mixin.flex-padding-modifier(nowrap, column, center, center, 1rem);
+        margin: 1rem;
+        width: 100px;
+        height: 100px;
+    }
+
+    &__icon {
+        font-size: 5rem;
+        color: palette.$text-color;
+    }
+    
+}
+
+
+
+
+
+
+
+
+

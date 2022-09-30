@@ -1,0 +1,12 @@
+@use "../partials/typography";
+@use "../partials/palette";
+@use "../partials/mixin";
+
+.about {
+    @include mixin.flex-padding-modifier(nowrap, column, center, center, 5rem);
+    @include mixin.text-modifier();
+
+    &__group {
+        @include mixin.flex-padding-modifier(wrap, row, center, center, 0);
+    }
+}

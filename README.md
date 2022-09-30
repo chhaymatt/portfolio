@@ -8,7 +8,8 @@ This is my portfolio to showcase what I have been learning during the course and
 # MVP
 - ✅ Stored on a public repository on Github
 - ✅ Contained README.md with a short introduction
-- ✅ Styling is completed via SCSS using BEM
+- ✅ Styling is completed via SCSS using BEM and stored accordingly in /partials and /modules folders
+- ✅ Portfolio is responsive using flex
 
 
 # Sections on my portoflio
@@ -20,10 +21,5 @@ This is my portfolio to showcase what I have been learning during the course and
 
 
 # To do
-- ⏰ Syling contains mixins (plan: reduce duplicate code)
-- ⏰ Styling mixins are stored in styles/partials 
-- ⏰ Styling sections are stored in styles/modules
-- ⏰ Styling contains media queries for responsiveness (plan: reduce heading sizes, padding for smaller screen sizes)
-
-
+- ⏰ Styling contains media queries for further responsiveness (plan: reduce heading sizes, padding for smaller screen sizes)
 
