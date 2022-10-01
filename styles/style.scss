@@ -46,7 +46,8 @@ body {
 
 .main {
     @include mixin.flex-padding-modifier(nowrap, column, center, center, 0);
-    margin-top: 4rem; // Should be the same as height of nav;    
+    margin-top: 4rem; // Should be the same as height of nav;
+
 }
 
 

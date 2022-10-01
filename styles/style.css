@@ -3,7 +3,7 @@
 /* SCSS RGB */
 /* SCSS Gradient */
 .home {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
 }
 .home__image {
@@ -179,7 +179,7 @@
 }
 
 .about {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   background-color: rgb(250, 250, 255);
 }
@@ -348,7 +348,7 @@
 }
 
 .skills {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
 }
 @media only screen and (max-width: 600px) {
@@ -534,7 +534,7 @@
 }
 
 .projects {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   background-color: rgb(250, 250, 255);
 }
@@ -731,7 +731,7 @@
 }
 
 .contact {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
 }
 @media only screen and (max-width: 600px) {

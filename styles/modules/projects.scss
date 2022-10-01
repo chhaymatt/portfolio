@@ -3,7 +3,7 @@
 @use "../partials/mixin"; 
 
 .projects {
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     background-color: palette.$tertiary-color;
     @include mixin.responsive-sections;
