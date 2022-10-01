@@ -121,14 +121,36 @@
         @include phone {
             font-size: 1.5rem;
         }
+        @include tablet {
+            font-size: 1.5rem;
+        }
+        @include tablet-landscape {
+            font-size: 2rem;
+        }
+        @include laptop {
+            font-size: 2rem;
+        }
     }
 
     &__text {
         color: palette.$text-color;
         
         &--squish {
-            width: 50vw;
-
+            @include phone {
+                width: 90vw;
+            }
+            @include tablet {
+                width: 80vw;
+            }
+            @include tablet-landscape {
+                width: 75vw;
+            }
+            @include laptop {
+                width: 60vw;
+            }
+            @include desktop {
+                width: 50vw;
+            }
         }
     }
 
