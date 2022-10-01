@@ -2,9 +2,6 @@
 @use "./typography";
 @use "./devices";
 
-
-
-
 // Styles for flex and padding
 @mixin flex-padding-modifier($wrap, $direction, $justify, $align-items, $padding) {
     display: flex;
@@ -13,8 +10,6 @@
     justify-content: $justify;
     align-items: $align-items;
     padding: $padding;
-
-
 }
 
 // Used for every other section except for landing section
@@ -167,5 +162,4 @@
             }
         }
     }
-
 }
