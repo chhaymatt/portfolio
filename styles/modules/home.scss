@@ -19,7 +19,7 @@
     
     &__group {
         @include mixin.flex-padding-modifier(wrap, column, center, center, 0);
-        padding: 1rem;
+
     }
     
 

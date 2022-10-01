@@ -9,7 +9,8 @@
     @include mixin.text-modifier;
 
     &__group {
-        @include mixin.flex-padding-modifier(wrap, row, center, center, 0);
+        @include mixin.flex-padding-modifier(wrap, row, space-evenly, center, 0);
+        width: 100%;
         
         a {
             color: palette.$text-color;
