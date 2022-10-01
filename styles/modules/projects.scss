@@ -10,9 +10,9 @@
     @include mixin.text-modifier;
 
     &__heading {
-        padding-top: 4rem;
+        padding-top: 5rem;
     }
-
+    
     &__group {
         @include mixin.flex-padding-modifier(wrap, row, center, center, 0);
     }

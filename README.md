@@ -9,7 +9,7 @@ This is my portfolio to showcase what I have been learning during the course and
 - ✅ Stored on a public repository on Github
 - ✅ Contained README.md with a short introduction
 - ✅ Styling is completed via SCSS using BEM and stored accordingly in /partials and /modules folders
-- ✅ Portfolio is responsive using flex
+- ✅ Portfolio is responsive using flex and media queries for text 
 
 
 # Sections on my portoflio
@@ -18,8 +18,3 @@ This is my portfolio to showcase what I have been learning during the course and
 - ✅ A skills section
 - ✅ A project section
 - ✅ A contact section
-
-
-# To do
-- ⏰ Styling contains media queries for further responsiveness (plan: reduce heading sizes, padding for smaller screen sizes)
-

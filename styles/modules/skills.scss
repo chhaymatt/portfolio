@@ -7,6 +7,10 @@
     min-height: 100vh;
     @include mixin.responsive-sections;
     @include mixin.text-modifier();
+    
+    &__heading {
+        padding-top: 5rem;
+    }
 
     &__group {
         @include mixin.flex-padding-modifier(wrap, row, center, center, 0);
