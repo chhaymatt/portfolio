@@ -6,8 +6,13 @@
     width: 100%;
     min-height: 100vh;
     @include mixin.responsive-sections;
-    @include mixin.text-modifier();
+    @include mixin.text-modifier;
     
+    &__text {
+        padding-top: 1rem;
+        text-align: center;
+    }
+
     &__heading {
         padding-top: 5rem;
     }
@@ -27,6 +32,10 @@
     &__icon {
         font-size: 5rem;
         color: palette.$text-color;
+
+        &--fade {
+            color: palette.$fade-color;
+        }
     }
     
 }

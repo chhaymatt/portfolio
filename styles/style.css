@@ -143,6 +143,9 @@
 .home__text {
   color: rgb(48, 52, 63);
 }
+.home__text--fade {
+  color: #d4c8f2;
+}
 @media only screen and (max-width: 600px) {
   .home__text--squish {
     width: 90vw;
@@ -181,56 +184,12 @@
   width: 100%;
   min-height: 100vh;
   background-color: rgb(250, 250, 255);
-}
-@media only screen and (max-width: 600px) {
-  .about {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0rem;
-  }
-}
-@media only screen and (min-width: 601px) and (max-width: 992px) {
-  .about {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0rem;
-  }
-}
-@media only screen and (min-width: 993px) and (max-width: 1200px) {
-  .about {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0rem;
-  }
-}
-@media only screen and (min-width: 1201px) and (max-width: 1440px) {
-  .about {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0rem;
-  }
-}
-@media only screen and (min-width: 1441px) {
-  .about {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0rem;
-  }
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem;
 }
 .about__heading {
   text-align: center;
@@ -312,6 +271,9 @@
 .about__text {
   color: rgb(48, 52, 63);
 }
+.about__text--fade {
+  color: #d4c8f2;
+}
 @media only screen and (max-width: 600px) {
   .about__text--squish {
     width: 90vw;
@@ -349,56 +311,12 @@
 .skills {
   width: 100%;
   min-height: 100vh;
-}
-@media only screen and (max-width: 600px) {
-  .skills {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0rem;
-  }
-}
-@media only screen and (min-width: 601px) and (max-width: 992px) {
-  .skills {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0rem;
-  }
-}
-@media only screen and (min-width: 993px) and (max-width: 1200px) {
-  .skills {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0rem;
-  }
-}
-@media only screen and (min-width: 1201px) and (max-width: 1440px) {
-  .skills {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0rem;
-  }
-}
-@media only screen and (min-width: 1441px) {
-  .skills {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0rem;
-  }
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem;
 }
 .skills__heading {
   text-align: center;
@@ -480,6 +398,9 @@
 .skills__text {
   color: rgb(48, 52, 63);
 }
+.skills__text--fade {
+  color: #d4c8f2;
+}
 @media only screen and (max-width: 600px) {
   .skills__text--squish {
     width: 90vw;
@@ -504,6 +425,10 @@
   .skills__text--squish {
     width: 50vw;
   }
+}
+.skills__text {
+  padding-top: 1rem;
+  text-align: center;
 }
 .skills__heading {
   padding-top: 5rem;
@@ -532,61 +457,20 @@
   font-size: 5rem;
   color: rgb(48, 52, 63);
 }
+.skills__icon--fade {
+  color: #d4c8f2;
+}
 
 .projects {
   width: 100%;
   min-height: 100vh;
   background-color: rgb(250, 250, 255);
-}
-@media only screen and (max-width: 600px) {
-  .projects {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0rem;
-  }
-}
-@media only screen and (min-width: 601px) and (max-width: 992px) {
-  .projects {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0rem;
-  }
-}
-@media only screen and (min-width: 993px) and (max-width: 1200px) {
-  .projects {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0rem;
-  }
-}
-@media only screen and (min-width: 1201px) and (max-width: 1440px) {
-  .projects {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0rem;
-  }
-}
-@media only screen and (min-width: 1441px) {
-  .projects {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0rem;
-  }
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem;
 }
 .projects__heading {
   text-align: center;
@@ -668,6 +552,9 @@
 .projects__text {
   color: rgb(48, 52, 63);
 }
+.projects__text--fade {
+  color: #d4c8f2;
+}
 @media only screen and (max-width: 600px) {
   .projects__text--squish {
     width: 90vw;
@@ -734,56 +621,12 @@
 .contact {
   width: 100%;
   min-height: 100vh;
-}
-@media only screen and (max-width: 600px) {
-  .contact {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0rem;
-  }
-}
-@media only screen and (min-width: 601px) and (max-width: 992px) {
-  .contact {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0rem;
-  }
-}
-@media only screen and (min-width: 993px) and (max-width: 1200px) {
-  .contact {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0rem;
-  }
-}
-@media only screen and (min-width: 1201px) and (max-width: 1440px) {
-  .contact {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0rem;
-  }
-}
-@media only screen and (min-width: 1441px) {
-  .contact {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0rem;
-  }
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem;
 }
 .contact__heading {
   text-align: center;
@@ -864,6 +707,9 @@
 }
 .contact__text {
   color: rgb(48, 52, 63);
+}
+.contact__text--fade {
+  color: #d4c8f2;
 }
 @media only screen and (max-width: 600px) {
   .contact__text--squish {

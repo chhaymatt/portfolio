@@ -19,22 +19,7 @@
 
 // Used for every other section except for landing section
 @mixin responsive-sections {
-    // Note this contains flex-padding-modifier per device to test different paddings (if all 0, then media queries are redundant)
-    @include phone {
-        @include flex-padding-modifier(nowrap, column, center, center, 0rem);
-    }
-    @include tablet {
-        @include flex-padding-modifier(nowrap, column, center, center, 0rem);
-    }
-    @include tablet-landscape {
-        @include flex-padding-modifier(nowrap, column, center, center, 0rem);
-    }
-    @include laptop {
-        @include flex-padding-modifier(nowrap, column, center, center, 0rem);
-    }
-    @include desktop {
-        @include flex-padding-modifier(nowrap, column, center, center, 0rem);
-    }
+    @include flex-padding-modifier(nowrap, column, center, center, 0rem);
 }
 
 // Used for landing section or a section with side by side content
@@ -160,6 +145,10 @@
     &__text {
         color: palette.$text-color;
         
+        &--fade {
+            color: palette.$fade-color;
+        }
+
         &--squish {
             @include phone {
                 width: 90vw;

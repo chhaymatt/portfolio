@@ -46,17 +46,11 @@ body {
 
 .main {
     @include mixin.flex-padding-modifier(nowrap, column, center, center, 0);
-    margin-top: 4rem; // Should be the same as height of nav;
+    margin-top: 4rem; // Should be the same as height of nav
 
 }
 
-// .background {
-//     background-image: url(https://images.unsplash.com/photo-1617957689233-207e3cd3c610?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80);
-//     background-attachment: fixed;
-//     background-position: center;
-// }
-
-
+// Topography pattern, source: https://heropatterns.com/ 
 .feature-background {
     background-attachment: fixed;
     background-color: #e4d9ff;
