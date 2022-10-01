@@ -3,9 +3,9 @@
 @use "../partials/mixin";
 
 .home {
-    @include mixin.flex-padding-modifier(nowrap, column, center, center, 5rem);
-    @include mixin.text-modifier();
-
+    width: 100vw;
+    min-height: 100vh;
+    
     &__image {
         margin-top: 1rem;
         border-radius: 1rem;
@@ -13,4 +13,14 @@
         width: 20rem;
         border: 0.2rem solid palette.$tertiary-color;
     }
+
+    @include mixin.responsive-sections-side;
+    @include mixin.text-modifier;
+    
+    &__group {
+        @include mixin.flex-padding-modifier(wrap, column, center, center, 0);
+        padding: 1rem;
+    }
+    
+
 }

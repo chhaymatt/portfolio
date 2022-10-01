@@ -3,8 +3,10 @@
 @use "../partials/mixin";
 
 .contact {
-    @include mixin.flex-padding-modifier(nowrap, column, center, center, 5rem);
-    @include mixin.text-modifier();
+    width: 100vw;
+    min-height: 100vh;
+    @include mixin.responsive-sections;
+    @include mixin.text-modifier;
 
     &__group {
         @include mixin.flex-padding-modifier(wrap, row, center, center, 0);
