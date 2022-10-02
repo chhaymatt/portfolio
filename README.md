@@ -1,5 +1,5 @@
 # Portfolio
-- https://chhaymatt.github.io/portfolio/
+https://chhaymatt.github.io/portfolio/
 
 # Introduction
 This is my portfolio to showcase what I have been learning during the course and to give visitors an insight to who I am. It will be updated after each project completion or additional skill.
