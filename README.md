@@ -1,18 +1,22 @@
 # Portfolio
+## Visit
 https://chhaymatt.github.io/portfolio/
 
-# Introduction
+## Introduction
 This is my portfolio to showcase what I have been learning during the course and to give visitors an insight to who I am. It will be updated after each project completion or additional skill.
 
+## Preview
+![Preview of Matthew Chhay's Portfolio](https://i.imgur.com/EL36zPW.png)
 
-# MVP
+
+## MVP
 - ✅ Stored on a public repository on Github
 - ✅ Contained README.md with a short introduction
 - ✅ Styling is completed via SCSS using BEM and stored accordingly in /partials and /modules folders
 - ✅ Portfolio is responsive using flex and media queries for text 
 
 
-# Sections on my portoflio
+### Sections on my portoflio
 - ✅ A landing section
 - ✅ An about section
 - ✅ A skills section
