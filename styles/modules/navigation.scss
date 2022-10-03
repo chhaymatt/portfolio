@@ -51,11 +51,11 @@
 
     &__button {
         display: block;
-        background-color: palette.$tertiary-color;
+        background: rgba(255, 255, 255, 0); // make middle line transparent
+        //background-color: palette.$tertiary-color; // remove content and comment previous line for three lines
         position: absolute;
         height: 4px;
         width: 30px;
-        transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
         border-radius: 1rem;
         
         &::before {
@@ -87,7 +87,7 @@
 
     &:checked + .nav__button-container .nav__button::before {
         margin-top: 0px;
-        transform: rotate(405deg);
+        transform: rotate(-45deg);
     }
 
     &:checked + .nav__button-container .nav__button {
@@ -96,7 +96,7 @@
 
     &:checked + .nav__button-container .nav__button::after {
         margin-top: 0px;
-        transform: rotate(-405deg);
+        transform: rotate(45deg);
     }
 }
 
