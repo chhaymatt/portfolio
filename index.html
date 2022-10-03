@@ -48,16 +48,35 @@
 
     <!-- Navigation -->
     <nav class="nav">
+        <!-- <a class="nav__title" href="#home">
+          Matthew Chhay
+        </a> -->
+        <input id="navToggle" type="checkbox">
+        <label class="nav__button-container" for="navToggle">
+        <div class="nav__button"></div>
+      </label>
+        <div class="nav__group">
+            <a onclick="closeNav()" class="nav__link" href="#home">Home</a>
+            <a onclick="closeNav()" class="nav__link" href="#about">About</a>
+            <a onclick="closeNav()" class="nav__link" href="#skills">Skills</a>
+            <a onclick="closeNav()" class="nav__link" href="#projects">Projects</a>
+            <a onclick="closeNav()" class="nav__link" href="#contact">Contact</a>
+        </div>
+    </nav>
+
+
+    <!--
+    <nav class="nav">
         <a class="nav__link" href="#home">Home</a>
         <a class="nav__link" href="#about">About</a>
         <a class="nav__link" href="#skills">Skills</a>
         <a class="nav__link" href="#projects">Projects</a>
         <a class="nav__link" href="#contact">Contact</a>
     </nav>
+    -->
 
     <!-- Main -->
     <main class="main">
-
         <!-- Home Section -->
         <section class="home feature-background" id="home">
             <div class="home__group">

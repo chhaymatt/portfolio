@@ -8,6 +8,7 @@
 @use "./modules/contact.scss";
 @use "./modules/footer.scss";
 @use "./modules/tooltip.scss";
+@use "./modules/navigation.scss";
 
 * {
     margin: 0;
@@ -22,31 +23,36 @@ body {
     background-color: palette.$bg-color;
 }
 
-.nav {
-    @include mixin.flex-padding-modifier(nowrap, row, space-evenly, center, 0);
-    height: 4rem;
-    background-color: palette.$gunmetal;
+
+// .nav {
+//     @include mixin.flex-padding-modifier(nowrap, row, space-evenly, center, 0);
+//     height: 4rem;
+//     background-color: palette.$gunmetal;
     
-    overflow: hidden;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+//     overflow: hidden;
+//     position: fixed; /* Set the navbar to fixed position */
+//     top: 0; /* Position the navbar at the top of the page */
+//     width: 100%; /* Full width */
 
-    &__link {
-        color: palette.$tertiary-color;
-        font-family: typography.$heading-font;
-        font-size: 1rem;
-        text-decoration: none;
+//     &__link {
+//         //border: 1px solid black;
+//         padding: 0.5rem 2rem 0.5rem 2rem;
+//         color: palette.$tertiary-color;
+//         font-family: typography.$text-font;
+//         font-size: 1.5rem;
+//         text-decoration: none;
 
-        &:hover {
-            color: palette.$bg-color;
-        }
-    }
-}
+//         &:hover {
+//             background-color: palette.$bg-color;
+//             color: palette.$text-color;
+//             border-radius: 2rem;
+//         }
+//     }
+// }
 
 .main {
     @include mixin.flex-padding-modifier(nowrap, column, center, center, 0);
-    margin-top: 4rem; // Should be the same as height of nav
+    //margin-top: 4rem; // Should be the same as height of nav
 
 }
 
