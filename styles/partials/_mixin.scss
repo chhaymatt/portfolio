@@ -92,7 +92,6 @@
         @include desktop {
             font-size: 5rem;
         }
-
     }
 
     &__subheading {
@@ -139,7 +138,8 @@
 
     &__text {
         color: palette.$text-color;
-        
+        line-height: 1.5rem;
+
         &--fade {
             color: palette.$fade-color;
         }

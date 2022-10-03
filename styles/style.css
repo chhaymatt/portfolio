@@ -148,6 +148,7 @@
 }
 .home__text {
   color: rgb(48, 52, 63);
+  line-height: 1.5rem;
 }
 .home__text--fade {
   color: #d4c8f2;
@@ -276,6 +277,7 @@
 }
 .about__text {
   color: rgb(48, 52, 63);
+  line-height: 1.5rem;
 }
 .about__text--fade {
   color: #d4c8f2;
@@ -403,6 +405,7 @@
 }
 .skills__text {
   color: rgb(48, 52, 63);
+  line-height: 1.5rem;
 }
 .skills__text--fade {
   color: #d4c8f2;
@@ -557,6 +560,7 @@
 }
 .projects__text {
   color: rgb(48, 52, 63);
+  line-height: 1.5rem;
 }
 .projects__text--fade {
   color: #d4c8f2;
@@ -714,6 +718,7 @@
 }
 .contact__text {
   color: rgb(48, 52, 63);
+  line-height: 1.5rem;
 }
 .contact__text--fade {
   color: #d4c8f2;
