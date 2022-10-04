@@ -9,9 +9,28 @@
     @include mixin.responsive-sections;
     @include mixin.text-modifier;
 
+    &__heading {
+        padding-top: 5rem;
+    }
     &__group {
         @include mixin.flex-padding-modifier(wrap, row, center, center, 0);
     }
 
-    
+    &__pair {
+        @include mixin.flex-padding-modifier(nowrap, column, center, center, 1rem);
+        margin: 0.5rem;
+        width: 110px;
+        height: 110px;
+    }
+
+    &__icon {
+        font-size: 3rem;
+        color: palette.$text-color;
+    }
+
+    &__icon-text {
+        color: palette.$text-color;
+        margin-top: 1rem;
+        text-align: center;
+    }
 }

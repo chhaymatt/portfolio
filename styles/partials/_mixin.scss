@@ -145,21 +145,32 @@
         }
 
         &--squish {
-            @include phone {
-                width: 90vw;
-            }
-            @include tablet {
-                width: 80vw;
-            }
-            @include tablet-landscape {
-                width: 75vw;
-            }
-            @include laptop {
-                width: 60vw;
-            }
-            @include desktop {
-                width: 50vw;
-            }
+            @include squish;
         }
+    }
+
+    &__group {
+
+        &--squish {
+            @include squish;
+        }
+    }
+}
+
+@mixin squish {
+    @include phone {
+        width: 90%;
+    }
+    @include tablet {
+        width: 80%;
+    }
+    @include tablet-landscape {
+        width: 75%;
+    }
+    @include laptop {
+        width: 60%;
+    }
+    @include desktop {
+        width: 50%;
     }
 }

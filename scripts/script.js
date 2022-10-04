@@ -10,7 +10,7 @@ function copyText() {
 
 function outFunc() {
 var tooltip = document.getElementById("myTooltip");
-tooltip.innerHTML = "Copy to clipboard";
+tooltip.innerHTML = "Copy email to clipboard";
 }
 
 
