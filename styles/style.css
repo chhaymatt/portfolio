@@ -1,4 +1,7 @@
-/* FORCE UPDATING CSS */
+/* SCSS HEX */
+/* SCSS HSL */
+/* SCSS RGB */
+/* SCSS Gradient */
 .topography-pattern {
   background-attachment: fixed;
   background-color: rgb(228, 217, 255);
@@ -558,11 +561,14 @@
   width: 18rem;
 }
 .projects__article img {
+  object-fit: cover;
   margin-top: 1rem;
   margin-bottom: 1rem;
   border-radius: 1rem;
   height: 18rem;
   width: 18rem;
+  background-position: center;
+  border: 0.1rem solid rgb(228, 217, 255);
 }
 .projects__article a {
   color: rgb(48, 52, 63);

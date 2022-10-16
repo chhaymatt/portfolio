@@ -24,12 +24,14 @@
         width: 18rem;
  
         img {
+            object-fit: cover;
             margin-top: 1rem;
             margin-bottom: 1rem;
             border-radius: 1rem;
             height: 18rem;
             width: 18rem;
-            //border: 0.2rem solid palette.$bg-color;
+            background-position: center;
+            border: 0.1rem solid palette.$bg-color;
         }
 
         a {
