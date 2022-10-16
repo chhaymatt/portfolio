@@ -561,7 +561,6 @@
   width: 18rem;
 }
 .projects__article img {
-  object-fit: cover;
   margin-top: 1rem;
   margin-bottom: 1rem;
   border-radius: 1rem;
@@ -569,6 +568,7 @@
   width: 18rem;
   background-position: center;
   border: 0.1rem solid rgb(228, 217, 255);
+  object-fit: cover;
 }
 .projects__article a {
   color: rgb(48, 52, 63);

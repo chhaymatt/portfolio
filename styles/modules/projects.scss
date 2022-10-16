@@ -24,7 +24,6 @@
         width: 18rem;
  
         img {
-            object-fit: cover;
             margin-top: 1rem;
             margin-bottom: 1rem;
             border-radius: 1rem;
@@ -32,6 +31,7 @@
             width: 18rem;
             background-position: center;
             border: 0.1rem solid palette.$bg-color;
+            object-fit: cover;
         }
 
         a {
