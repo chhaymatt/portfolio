@@ -97,7 +97,6 @@
     &__subheading {
         font-family: typography.$heading-font;
         color: palette.$secondary-color;
-        text-align: center;
 
         @include phone {
             font-size: 1.5rem;

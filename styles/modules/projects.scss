@@ -8,7 +8,7 @@
     background-color: palette.$tertiary-color;
     @include mixin.responsive-sections;
     @include mixin.text-modifier;
-
+    
     &__heading {
         padding-top: 5rem;
     }
@@ -18,8 +18,12 @@
         width: 100%;
     }
 
+    &__text {
+        height: 5rem;
+    }
+
     &__article {
-        @include mixin.flex-padding-modifier(nowrap, column, center, center, 1rem);
+        @include mixin.flex-padding-modifier(nowrap, column, center, flex-start, 1rem);
         margin: 1rem;
         width: 18rem;
  
@@ -30,8 +34,17 @@
             height: 18rem;
             width: 18rem;
             background-position: center;
-            border: 0.1rem solid palette.$bg-color;
             object-fit: cover;
+            filter: grayscale(25%);
+            box-shadow: (0px 0px 6px palette.$bg-color);
+
+            &:hover {
+                filter: none;
+                transform: scale(1.05);
+                transition: transform .2s;
+                -webkit-filter: none drop-shadow(0px 0px 6px palette.$bg-color);
+                -moz-filter: none drop-shadow(0px 0px 6px palette.$bg-color);
+            }
         }
 
         a {
