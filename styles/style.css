@@ -553,7 +553,7 @@
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   padding: 1rem;
   margin: 1rem;
