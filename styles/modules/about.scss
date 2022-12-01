@@ -3,37 +3,43 @@
 @use "../partials/mixin";
 
 .about {
-    width: 100%;
-    min-height: 100vh;
-    background-color: palette.$tertiary-color;
-    @include mixin.responsive-sections;
+	width: 100%;
+	min-height: 100vh;
+	background-color: palette.$tertiary-color;
+	@include mixin.responsive-sections;
 
-    &__heading {
-        padding-top: 5rem;
-    }
+	&__heading {
+		padding-top: 5rem;
+	}
 
-    &__group {
-        @include mixin.flex-padding-modifier(wrap, row, center, center, 0);
-        width: 100%;
-        @include mixin.squish;
-    }
+	&__group {
+		@include mixin.flex-padding-modifier(wrap, row, center, center, 0);
+		width: 100%;
+		@include mixin.squish;
+	}
 
-    &__pair {
-        @include mixin.flex-padding-modifier(nowrap, column, center, center, 1rem);
-        margin: 0.5rem;
-        width: 110px;
-        height: 110px;
-    }
+	&__pair {
+		@include mixin.flex-padding-modifier(
+			nowrap,
+			column,
+			center,
+			center,
+			1rem
+		);
+		margin: 0.5rem;
+		width: 110px;
+		height: 110px;
+	}
 
-    &__icon {
-        font-size: 3rem;
-        color: palette.$text-color;
-    }
+	&__icon {
+		font-size: 3rem;
+		color: palette.$text-color;
+	}
 
-    &__icon-text {
-        margin-top: 1rem;
-        text-align: center;
-    }
+	&__icon-text {
+		margin-top: 1rem;
+		text-align: center;
+	}
 
-    @include mixin.text-modifier;
+	@include mixin.text-modifier;
 }

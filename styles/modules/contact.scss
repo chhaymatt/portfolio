@@ -3,34 +3,39 @@
 @use "../partials/mixin";
 
 .contact {
-    width: 100%;
-    min-height: 100vh;
-    @include mixin.responsive-sections;
-    @include mixin.text-modifier;
+	width: 100%;
+	min-height: 100vh;
+	@include mixin.responsive-sections;
+	@include mixin.text-modifier;
 
-    &__group {
-        @include mixin.flex-padding-modifier(wrap, row, center, center, 0);
-        width: 100%;
-        
-        a {
-            color: palette.$text-color;
-            text-decoration: none; 
-            font-size: 5rem;
-         
-            &:hover {
-             font-size: 5rem;
-             color: palette.$secondary-color;
-             }
-        }
+	&__group {
+		@include mixin.flex-padding-modifier(wrap, row, center, center, 0);
+		width: 100%;
 
-        p {
-            font-size: 1rem;
-        }
-    }
+		a {
+			color: palette.$text-color;
+			text-decoration: none;
+			font-size: 5rem;
 
-    &__pair {
-        @include mixin.flex-padding-modifier(wrap, column, center, center, 1rem);
-        margin: 1rem;
-    }
+			&:hover {
+				font-size: 5rem;
+				color: palette.$secondary-color;
+			}
+		}
 
+		p {
+			font-size: 1rem;
+		}
+	}
+
+	&__pair {
+		@include mixin.flex-padding-modifier(
+			wrap,
+			column,
+			center,
+			center,
+			1rem
+		);
+		margin: 1rem;
+	}
 }

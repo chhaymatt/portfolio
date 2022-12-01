@@ -18,6 +18,7 @@
   height: 20rem;
   width: 20rem;
   border: 0.2rem solid rgb(250, 250, 255);
+  object-fit: cover;
 }
 @media only screen and (max-width: 600px) {
   .home {
@@ -421,6 +422,11 @@
   padding: 0;
   width: 100%;
 }
+@media only screen and (min-width: 1441px) {
+  .skills__group {
+    width: 50%;
+  }
+}
 .skills__pair {
   display: flex;
   flex-wrap: nowrap;
@@ -433,8 +439,11 @@
   height: 110px;
 }
 .skills__icon {
+  text-align: center;
   font-size: 5rem;
   color: rgb(48, 52, 63);
+  object-fit: contain;
+  width: 4.5rem;
 }
 .skills__icon--fade {
   color: #d4c8f2;
@@ -585,6 +594,17 @@
 .projects__article a:hover {
   font-size: 2rem;
   color: rgb(39, 52, 105);
+}
+.projects__lower {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.projects__lower p {
+  border: 1px solid rgb(48, 52, 63);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
 }
 
 .contact {

@@ -1,304 +1,437 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles/style.css" />
 
-    <!-- Primary Meta Tags -->
-    <title>Matthew Chhay | Software Developer</title>
-    <meta name="title" content="Matthew Chhay">
-    <meta name="description" content="Matthew Chhay is a software developer based in Adelaide.">
-    <meta name="theme-color" content="#e4d9ffff">
+		<!-- Primary Meta Tags -->
+		<title>Matthew Chhay | Software Developer</title>
+		<meta name="title" content="Matthew Chhay" />
+		<meta
+			name="description"
+			content="Matthew Chhay is a software developer based in Adelaide." />
+		<meta name="theme-color" content="#e4d9ffff" />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://matthewchhay.com">
-    <meta property="og:title" content="Matthew Chhay">
-    <meta property="og:description" content="Matthew Chhay is a software developer based in Adelaide.">
-    <meta property="og:image" content="https://i.imgur.com/EL36zPW.png">
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://matthewchhay.com" />
+		<meta property="og:title" content="Matthew Chhay" />
+		<meta
+			property="og:description"
+			content="Matthew Chhay is a software developer based in Adelaide." />
+		<meta property="og:image" content="https://i.imgur.com/qJNWw8g.png" />
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://matthewchhay.com">
-    <meta property="twitter:title" content="Matthew Chhay">
-    <meta property="twitter:description" content="Matthew Chhay is a software developer based in Adelaide.">
-    <meta property="twitter:image" content="https://i.imgur.com/EL36zPW.png">
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://matthewchhay.com" />
+		<meta property="twitter:title" content="Matthew Chhay" />
+		<meta
+			property="twitter:description"
+			content="Matthew Chhay is a software developer based in Adelaide." />
+		<meta
+			property="twitter:image"
+			content="https://i.imgur.com/qJNWw8g.png" />
 
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/c3aaf1830b.js" crossorigin="anonymous"></script>
+		<!-- Font Awesome -->
+		<script
+			src="https://kit.fontawesome.com/c3aaf1830b.js"
+			crossorigin="anonymous"></script>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Playfair+Display:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Playfair+Display:wght@400;500;600;700;900&display=swap"
+			rel="stylesheet" />
 
-    <!-- Favicons using https://favicon.io/favicon-generator/ -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./styles/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./styles/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./styles/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./styles/images/favicon/site.webmanifest">
+		<!-- Favicons using https://favicon.io/favicon-generator/ -->
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./styles/images/favicon/apple-touch-icon.png" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./styles/images/favicon/favicon-32x32.png" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./styles/images/favicon/favicon-16x16.png" />
+		<link rel="manifest" href="./styles/images/favicon/site.webmanifest" />
 
-    <!-- JS -->
-    <script src="./scripts/script.js"></script>
-
-</head>
-<body>
-
-    <!-- Navigation -->
-    <nav class="nav">
-        <!-- <a class="nav__title" href="#home">
+		<!-- JS -->
+		<script src="./scripts/script.js"></script>
+	</head>
+	<body>
+		<!-- Navigation -->
+		<nav class="nav">
+			<!-- <a class="nav__title" href="#home">
           Matthew Chhay
         </a> -->
-        <input id="navToggle" type="checkbox">
-        <label class="nav__button-container" for="navToggle">
-        <div class="nav__button" aria-roledescription="Open or close navigation"></div>
-      </label>
-        <div class="nav__group">
-            <a onclick="closeNav()" class="nav__link" href="#home">Home</a>
-            <a onclick="closeNav()" class="nav__link" href="#about">About</a>
-            <a onclick="closeNav()" class="nav__link" href="#skills">Skills</a>
-            <a onclick="closeNav()" class="nav__link" href="#projects">Projects</a>
-            <a onclick="closeNav()" class="nav__link" href="#contact">Contact</a>
-        </div>
-    </nav>
+			<input id="navToggle" type="checkbox" />
+			<label class="nav__button-container" for="navToggle">
+				<div
+					class="nav__button"
+					aria-roledescription="Open or close navigation"></div>
+			</label>
+			<div class="nav__group">
+				<a onclick="closeNav()" class="nav__link" href="#home">Home</a>
+				<a onclick="closeNav()" class="nav__link" href="#about"
+					>About</a
+				>
+				<a onclick="closeNav()" class="nav__link" href="#skills"
+					>Skills</a
+				>
+				<a onclick="closeNav()" class="nav__link" href="#projects"
+					>Projects</a
+				>
+				<a onclick="closeNav()" class="nav__link" href="#contact"
+					>Contact</a
+				>
+			</div>
+		</nav>
 
-    <!-- Main -->
-    <main class="main">
-        <!-- Home Section -->
-        <section class="home topography-pattern" id="home">
-            <div class="home__group">
-                <h1 class="home__heading">Hi, I'm Matthew!</h1>
-                <h2 class="home__subheading home__subheading--larger">Software Developer</h2>
-            </div>
-            <img class="home__image" src="./styles/images/matt.jpeg" alt="Matthew Chhay">
-        </section>
+		<!-- Main -->
+		<main class="main">
+			<!-- Home Section -->
+			<section class="home topography-pattern" id="home">
+				<div class="home__group">
+					<h1 class="home__heading">Hi, I'm Matthew!</h1>
+					<h2 class="home__subheading home__subheading--larger">
+						Software Developer
+					</h2>
+				</div>
+				<img
+					class="home__image"
+					src="./styles/images/matt.jpg"
+					alt="Matthew Chhay" />
+			</section>
 
-        <!-- About Section -->
-        <section class="about tictactoe-background" id="about">
-            <h1 class="about__heading">About</h1>
-            <div class="about__group">
-                <p class="about__text about__text--squish">Hey there! I'm a civil engineer turned software developer based in Adelaide. For 3 years, I was the friendly voice at Apple, saving someone's day. Through contact tracing, I helped reduce the spread of COVID-19 in Victoria. I am eager to problem solve and make a positive difference to people. I love creating, improving things and learning about technology. In my spare time, you'll see me playing video games or riding my bike to the beach.</p>
-            </div>
-            <br>
-            <br>
-            <br>
-            <div class="about__group about__group--squish">
-                <div class="about__pair">
-                    <i class="about__icon fa-solid fa-lightbulb"></i>
-                    <p class="about__icon-text">Problem Solver</p>
-                </div>
-                <div class="about__pair">
-                    <i class="about__icon fa-solid fa-laptop-code"></i>
-                    <p class="about__icon-text">Software Developer</p>
-                </div>
-                <div class="about__pair">
-                    <i class="about__icon fa-solid fa-arrow-up-right-dots"></i>
-                    <p class="about__icon-text">Career Changer</p>
-                </div>
-                <div class="about__pair">
-                    <i class="about__icon fa-solid fa-people-arrows"></i>
-                    <p class="about__icon-text">Collaborator</p>
-                </div>
-                <div class="about__pair">
-                    <i class="about__icon fa-solid fa-magnifying-glass"></i>
-                    <p class="about__icon-text">Curious</p>
-                </div>
-                <div class="about__pair">
-                    <i class="about__icon fa-solid fa-helmet-safety"></i>
-                    <p class="about__icon-text">Civil Engineer</p>
-                </div>
-                <div class="about__pair">
-                    <i class="about__icon fa-solid fa-gamepad"></i>
-                    <p class="about__icon-text">Gamer</p>
-                </div>
-                <div class="about__pair">
-                    <i class="about__icon fa-solid fa-person-biking"></i>
-                    <p class="about__icon-text">Cyclist</p>
-                </div>
-            </div>
-        </section>
+			<!-- About Section -->
+			<section class="about tictactoe-background" id="about">
+				<h1 class="about__heading">About</h1>
+				<div class="about__group">
+					<p class="about__text about__text--squish">
+						Hey there! I'm a civil engineer turned software
+						developer based in Adelaide. For 3 years, I was the
+						friendly voice at Apple, saving someone's day. Through
+						contact tracing, I helped reduce the spread of COVID-19
+						in Victoria. I am eager to problem solve and make a
+						positive difference to people. I love creating,
+						improving things and learning about technology. In my
+						spare time, you'll see me playing video games or riding
+						my bike to the beach.
+					</p>
+				</div>
+				<br />
+				<br />
+				<br />
+				<div class="about__group about__group--squish">
+					<div class="about__pair">
+						<i class="about__icon fa-solid fa-lightbulb"></i>
+						<p class="about__icon-text">Problem Solver</p>
+					</div>
+					<div class="about__pair">
+						<i class="about__icon fa-solid fa-laptop-code"></i>
+						<p class="about__icon-text">Software Developer</p>
+					</div>
+					<div class="about__pair">
+						<i
+							class="about__icon fa-solid fa-arrow-up-right-dots"></i>
+						<p class="about__icon-text">Career Changer</p>
+					</div>
+					<div class="about__pair">
+						<i class="about__icon fa-solid fa-people-arrows"></i>
+						<p class="about__icon-text">Collaborator</p>
+					</div>
+					<div class="about__pair">
+						<i class="about__icon fa-solid fa-magnifying-glass"></i>
+						<p class="about__icon-text">Curious</p>
+					</div>
+					<div class="about__pair">
+						<i class="about__icon fa-solid fa-helmet-safety"></i>
+						<p class="about__icon-text">Civil Engineer</p>
+					</div>
+					<div class="about__pair">
+						<i class="about__icon fa-solid fa-gamepad"></i>
+						<p class="about__icon-text">Gamer</p>
+					</div>
+					<div class="about__pair">
+						<i class="about__icon fa-solid fa-person-biking"></i>
+						<p class="about__icon-text">Cyclist</p>
+					</div>
+				</div>
+			</section>
 
-        <!-- Skills Section -->
-        <section class="skills" id="skills">
-            <h1 class="skills__heading">Skills</h1>
-            <h2 class="skills__subheading">I can code in</h2>
+			<!-- Skills Section -->
+			<section class="skills" id="skills">
+				<h1 class="skills__heading">Skills</h1>
+				<h2 class="skills__subheading">I can code in</h2>
 
-            <!-- Current Skills -->
-            <div class="skills__group">
-                <div class="skills__pair">
-                    <i class="skills__icon fa-brands fa-html5"></i>
-                    <p class="skills__text">HTML</p>
-                </div>
-                <div class="skills__pair">
-                    <i class="skills__icon fa-brands fa-css3-alt"></i>
-                    <p class="skills__text">CSS</p>
-                </div>
-                <div class="skills__pair">
-                    <i class="skills__icon fa-brands fa-sass"></i>
-                    <p class="skills__text">SCSS</p>
-                </div>
-                <div class="skills__pair">
-                    <i class="skills__icon fa-brands fa-git"></i>
-                    <p class="skills__text">Git</p>
-                </div>
-                <div class="skills__pair">
-                    <i class="skills__icon fa-brands fa-square-js"></i>
-                    <p class="skills__text">JS</p>
-                </div>
-                <div class="skills__pair">
-                    <i class="skills__icon fa-brands fa-react"></i>
-                    <p class="skills__text">React</p>
-                </div>
-                <div class="skills__pair">
-                    <i class="skills__icon fa-solid fa-fire"></i>
-                    <p class="skills__text">Firebase & Firestore</p>
-                </div>
-            </div>
+				<!-- Current Skills -->
+				<div class="skills__group">
+					<div class="skills__pair">
+						<i class="skills__icon fa-brands fa-html5"></i>
+						<p class="skills__text">HTML</p>
+					</div>
+					<div class="skills__pair">
+						<i class="skills__icon fa-brands fa-css3-alt"></i>
+						<p class="skills__text">CSS</p>
+					</div>
+					<div class="skills__pair">
+						<i class="skills__icon fa-brands fa-sass"></i>
+						<p class="skills__text">SCSS</p>
+					</div>
+					<div class="skills__pair">
+						<i class="skills__icon fa-brands fa-git"></i>
+						<p class="skills__text">Git</p>
+					</div>
+					<div class="skills__pair">
+						<i class="skills__icon fa-brands fa-square-js"></i>
+						<p class="skills__text">JavaScript</p>
+					</div>
+					<div class="skills__pair">
+						<i class="skills__icon fa-brands fa-react"></i>
+						<p class="skills__text">React</p>
+					</div>
+					<div class="skills__pair">
+						<i class="skills__icon fa-solid fa-fire"></i>
+						<p class="skills__text">Firebase & Firestore</p>
+					</div>
+					<div class="skills__pair">
+						<i class="skills__icon fa-brands fa-java"></i>
+						<p class="skills__text">Java</p>
+					</div>
+					<div class="skills__pair">
+						<i class="skills__icon fa-solid fa-leaf"></i>
+						<p class="skills__text">Spring</p>
+					</div>
+					<div class="skills__pair">
+						<i class="skills__icon fa-solid fa-database"></i>
+						<p class="skills__text">mySQL</p>
+					</div>
+					<div class="skills__pair">
+						<img
+							class="skills__icon"
+							src="/styles/images/logo-typescript.png" />
+						<p class="skills__text">TypeScript</p>
+					</div>
+					<div class="skills__pair">
+						<img
+							class="skills__icon"
+							src="/styles/images/logo-nestjs.png" />
+						<p class="skills__text">NestJS</p>
+					</div>
+				</div>
 
-            <!-- Future Skills -->
-            <div class="skills__group">
-                
-                <div class="skills__pair">
-                    <i class="skills__icon skills__icon--fade fa-brands fa-java"></i>
-                    <p class="skills__text skills__text--fade">Java</p>
-                </div>
-                <div class="skills__pair">
-                    <i class="skills__icon skills__icon--fade fa-solid fa-leaf"></i>
-                    <p class="skills__text skills__text--fade">Spring Boot</p>
-                </div>
-                <div class="skills__pair">
-                    <i class="skills__icon skills__icon--fade fa-solid fa-database"></i>
-                    <p class="skills__text skills__text--fade">mySQL</p>
-                </div>
+				<!-- Future Skills -->
+				<!-- <div class="skills__group">
+					<div class="skills__pair">
+						<i class="skills__icon skills__icon--fade fa-solid fa-database"></i>
+						<p class="skills__text skills__text--fade">Skill</p>
+					</div>
+				</div> -->
+			</section>
 
-            </div>
-        </section>
+			<!-- Projects Section -->
+			<section class="projects" id="projects">
+				<h1 class="projects__heading">Projects</h1>
+				<div class="projects__group">
+					<article class="projects__article">
+						<h2 class="projects__subheading">fakeOS</h2>
+						<p class="projects__text">
+							Replicating the layout and format of the Mac
+							operating system using HTML, SCSS, and JS. Must be
+							viewed on a computer.
+						</p>
+						<a
+							target="_blank"
+							href="https://chhaymatt.github.io/fakeOS/">
+							<img
+								src="./styles/images/fakeOS.png"
+								alt="fakeOS" />
+						</a>
+						<div class="projects__lower">
+							<div>
+								<a
+									target="_blank"
+									href="https://chhaymatt.github.io/fakeOS/">
+									<i class="fa-solid fa-circle-play"></i>
+								</a>
+								<a href="https://github.com/chhaymatt/fakeOS">
+									<i class="fa-brands fa-github"></i>
+								</a>
+							</div>
+							<div><p>Desktop/laptop only</p></div>
+						</div>
+					</article>
+					<article class="projects__article">
+						<h2 class="projects__subheading">Morse Translator</h2>
+						<p class="projects__text">
+							Translating English text into International Morse
+							Code and vice versa using JS methods.
+						</p>
+						<a
+							target="_blank"
+							href="https://chhaymatt.github.io/morsetranslator/">
+							<img
+								src="./styles/images/morsetranslator.png"
+								alt="Morse Translator" />
+						</a>
+						<div class="projects__lower">
+							<div>
+								<a
+									target="_blank"
+									href="https://chhaymatt.github.io/morsetranslator/">
+									<i class="fa-solid fa-circle-play"></i>
+								</a>
+								<a
+									target="_blank"
+									href="https://github.com/chhaymatt/morsetranslator">
+									<i class="fa-brands fa-github"></i>
+								</a>
+							</div>
+							<div><p>Responsive on all devices</p></div>
+						</div>
+					</article>
 
-        <!-- Projects Section -->
-        <section class="projects" id="projects">
-            <h1 class="projects__heading">Projects</h1>
-            <div class="projects__group">
-                <article class="projects__article">
-                    <h2 class="projects__subheading">fakeOS</h2>
-                    <p class="projects__text">Replicating the layout and format of the Mac operating system using HTML, SCSS, and JS.</p>
-                    <a target="_blank" href="https://chhaymatt.github.io/fakeOS/">
-                        <img src="./styles/images/fakeOS.png" alt="fakeOS">
-                    </a>
-                    <div>
-                        <a target="_blank" href="https://chhaymatt.github.io/fakeOS/">
-                            <i class="fa-solid fa-circle-play"></i>
-                        </a>
-                        <a href="https://github.com/chhaymatt/fakeOS">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    </div>
-                </article>
-                <article class="projects__article">
-                    <h2 class="projects__subheading">Morse Translator</h2>
-                    <p class="projects__text">Translating English text into International Morse Code and vice versa using JS methods.</p>
-                    <a target="_blank" href="https://chhaymatt.github.io/morsetranslator/">
-                        <img src="./styles/images/morsetranslator.png" alt="Morse Translator">
-                    </a>
-                    <div>
-                        <a target="_blank" href="https://chhaymatt.github.io/morsetranslator/">
-                            <i class="fa-solid fa-circle-play"></i>
-                        </a>
-                        <a target="_blank" href="https://github.com/chhaymatt/morsetranslator">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    </div>
-                </article>
+					<article class="projects__article">
+						<h2 class="projects__subheading">Book Search</h2>
+						<p class="projects__text">
+							An app where a user can search for books from Google
+							Book's API using React JS and React Router.
+						</p>
+						<a
+							target="_blank"
+							href="https://chhaymatt.github.io/books/">
+							<img
+								src="./styles/images/booksearch.png"
+								alt="Book Search" />
+						</a>
+						<div class="projects__lower">
+							<div>
+								<a
+									target="_blank"
+									href="https://chhaymatt.github.io/books/">
+									<i class="fa-solid fa-circle-play"></i>
+								</a>
+								<a target="_blank" href="#projects">
+									<i class="fa-brands fa-github"></i>
+								</a>
+							</div>
+							<div><p>Responsive on all devices</p></div>
+						</div>
+					</article>
 
-                <article class="projects__article">
-                    <h2 class="projects__subheading">Book Search</h2>
-                    <p class="projects__text">An app where a user can search for books from Google Book's API using React JS and React Router</p>
-                    <a target="_blank" href="https://chhaymatt.github.io/books/">
-                        <img src="./styles/images/booksearch.png" alt="Book Search">
-                    </a>
-                    <div>
-                        <a target="_blank" href="https://chhaymatt.github.io/books/">
-                            <i class="fa-solid fa-circle-play"></i>
-                        </a>
-                        <a target="_blank" href="#projects">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    </div>
-                </article>
+					<article class="projects__article">
+						<h2 class="projects__subheading">eShop</h2>
+						<p class="projects__text">
+							An ecommerce website using React JS, React Router
+							and Google Firestore.
+						</p>
+						<a href="https://chhaymatt.github.io/plushpals">
+							<img src="./styles/images/eShop.png" alt="eShop" />
+						</a>
+						<div class="projects__lower">
+							<div>
+								<a href="https://chhaymatt.github.io/plushpals">
+									<i class="fa-solid fa-circle-play"></i>
+								</a>
+								<a
+									href="https://github.com/chhaymatt/plushpals">
+									<i class="fa-brands fa-github"></i>
+								</a>
+							</div>
+							<div><p>Responsive on all devices</p></div>
+						</div>
+					</article>
 
-                <article class="projects__article">
-                    <h2 class="projects__subheading">e-Shop</h1>
-                    <p class="projects__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="#">
-                        <img src="./styles/images/blank-image.png" alt="e-Shop">
-                    </a>
-                    <div>
-                        <a href="#projects">
-                            <i class="fa-solid fa-circle-play"></i>
-                        </a>
-                        <a href="#projects">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    </div>
-                </article>
+					<article class="projects__article">
+						<h2 class="projects__subheading">Minesweeper</h2>
+						<p class="projects__text">
+							A recreated version of the game Minesweeper to be
+							played in the console built using Java.
+						</p>
+						<a href="https://github.com/chhaymatt/minesweeper">
+							<img
+								src="./styles/images/minesweeper.png"
+								alt="Minesweeper" />
+						</a>
+						<div class="projects__lower">
+							<div>
+								<!-- <a href="#projects">
+								<i class="fa-solid fa-circle-play"></i>
+							</a> -->
+								<a
+									href="https://github.com/chhaymatt/minesweeper">
+									<i class="fa-brands fa-github"></i>
+								</a>
+							</div>
+							<div><p>Java console</p></div>
+						</div>
+					</article>
+				</div>
+			</section>
 
-                <article class="projects__article">
-                    <h2 class="projects__subheading">Game</h1>
-                    <p class="projects__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="#">
-                        <img src="./styles/images/blank-image.png" alt="Game">
-                    </a>
-                    <div>
-                        <a href="#projects">
-                            <i class="fa-solid fa-circle-play"></i>
-                        </a>
-                        <a href="#projects">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    </div>
-                </article>
-            </div>
-        </section>
+			<!-- Contact Section -->
+			<section class="contact" id="contact">
+				<h1 class="contact__heading">Let's connect</h1>
 
-        <!-- Contact Section -->
-        <section class="contact" id="contact">
-            <h1 class="contact__heading">Let's connect</h1>
-            
-            <div class="contact__group">
-                <a class="tooltip" target="_blank" href="https://linkedin.com/in/matthewchhay/">
-                    <div class="contact__pair">
-                        <span class="tooltiptext">Open LinkedIn</span>
-                        <i class="fa-brands fa-linkedin-in"></i>
-                        <p>@matthewchhay</p>
-                    </div>
-                </a>
-                <a class="tooltip" onclick="copyText()" onmouseout="outFunc()">
-                    <div class="contact__pair">
-                        <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
-                        <i class="fa-solid fa-envelope"></i>
-                        <p>Email me</p>
-                    </div>
-                </a>   
-                
-                <a class="tooltip" target="_blank" href="https://github.com/chhaymatt">
-                    <div class="contact__pair">
-                        <span class="tooltiptext">Open GitHub</span>
-                        <i class="fa-brands fa-github"></i>
-                        <p>@chhaymatt</p>
-                    </div>
-                </a>
-            </div>
-        </section>
-    </main>
+				<div class="contact__group">
+					<a
+						class="tooltip"
+						target="_blank"
+						href="https://linkedin.com/in/matthewchhay/">
+						<div class="contact__pair">
+							<span class="tooltiptext">Open LinkedIn</span>
+							<i class="fa-brands fa-linkedin-in"></i>
+							<p>@matthewchhay</p>
+						</div>
+					</a>
+					<a
+						class="tooltip"
+						onclick="copyText()"
+						onmouseout="outFunc()">
+						<div class="contact__pair">
+							<span class="tooltiptext" id="myTooltip"
+								>Copy to clipboard</span
+							>
+							<i class="fa-solid fa-envelope"></i>
+							<p>Email me</p>
+						</div>
+					</a>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p class="footer__text">I acknowledge the Kaurna people as the traditional custodians of the lands and waters of the Adelaide Plains, where I work and live. I pay respect to Elders past and present.</p>
-        <p class="footer__text">
-            <script>document.write( new Date().getFullYear() );</script>
-             | Made by Matthew Chhay
-        </p>     
-    </footer>
-</body>
+					<a
+						class="tooltip"
+						target="_blank"
+						href="https://github.com/chhaymatt">
+						<div class="contact__pair">
+							<span class="tooltiptext">Open GitHub</span>
+							<i class="fa-brands fa-github"></i>
+							<p>@chhaymatt</p>
+						</div>
+					</a>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<p class="footer__text">
+				I acknowledge the Kaurna people as the traditional custodians of
+				the lands and waters of the Adelaide Plains, where I work and
+				live. I pay respect to Elders past and present.
+			</p>
+			<p class="footer__text">
+				<script>
+					document.write(new Date().getFullYear());
+				</script>
+				| Made by Matthew Chhay
+			</p>
+		</footer>
+	</body>
 </html>

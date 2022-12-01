@@ -12,16 +12,16 @@
 @use "./modules/navigation.scss";
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: typography.$text-font;
-    scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
+	font-family: typography.$text-font;
+	scroll-behavior: smooth;
 }
 
 body {
-    background-color: palette.$bg-color;
+	background-color: palette.$bg-color;
 }
 
 .main {
-    @include mixin.flex-padding-modifier(nowrap, column, center, center, 0);
+	@include mixin.flex-padding-modifier(nowrap, column, center, center, 0);
 }

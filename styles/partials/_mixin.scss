@@ -3,163 +3,168 @@
 @use "./devices";
 
 // Styles for flex and padding
-@mixin flex-padding-modifier($wrap, $direction, $justify, $align-items, $padding) {
-    display: flex;
-    flex-wrap: $wrap;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align-items;
-    padding: $padding;
+@mixin flex-padding-modifier(
+	$wrap,
+	$direction,
+	$justify,
+	$align-items,
+	$padding
+) {
+	display: flex;
+	flex-wrap: $wrap;
+	flex-direction: $direction;
+	justify-content: $justify;
+	align-items: $align-items;
+	padding: $padding;
 }
 
 // Used for every other section except for landing section
 @mixin responsive-sections {
-    @include flex-padding-modifier(nowrap, column, center, center, 0rem);
+	@include flex-padding-modifier(nowrap, column, center, center, 0rem);
 }
 
 // Used for landing section or a section with side by side content
 @mixin responsive-sections-side {
-    // Note this contains flex-padding-modifier per device to test different paddings (if all 0, then media queries are redundant)
-    @include phone {
-        @include flex-padding-modifier(nowrap, column, center, center, 0rem);
-    }
-    @include tablet {
-        @include flex-padding-modifier(nowrap, column, center, center, 0rem);
-    }
-    @include tablet-landscape {
-        @include flex-padding-modifier(nowrap, row, space-evenly, center, 0rem);
-    }
-    @include laptop {
-        @include flex-padding-modifier(nowrap, row, space-evenly, center, 0rem);
-    }
-    @include desktop {
-        @include flex-padding-modifier(nowrap, row, space-evenly, center, 0rem);
-    }
+	// Note this contains flex-padding-modifier per device to test different paddings (if all 0, then media queries are redundant)
+	@include phone {
+		@include flex-padding-modifier(nowrap, column, center, center, 0rem);
+	}
+	@include tablet {
+		@include flex-padding-modifier(nowrap, column, center, center, 0rem);
+	}
+	@include tablet-landscape {
+		@include flex-padding-modifier(nowrap, row, space-evenly, center, 0rem);
+	}
+	@include laptop {
+		@include flex-padding-modifier(nowrap, row, space-evenly, center, 0rem);
+	}
+	@include desktop {
+		@include flex-padding-modifier(nowrap, row, space-evenly, center, 0rem);
+	}
 }
 
 // Responsive Media Queries
 @mixin phone {
-    @media only screen and (max-width: devices.$xs) {
-        @content;
-    }
+	@media only screen and (max-width: devices.$xs) {
+		@content;
+	}
 }
 
 @mixin tablet {
-    @media only screen and (min-width: (devices.$xs + 1px)) and (max-width: devices.$md) {
-        @content;
-    }
+	@media only screen and (min-width: (devices.$xs + 1px)) and (max-width: devices.$md) {
+		@content;
+	}
 }
 
 @mixin tablet-landscape {
-    @media only screen and (min-width: (devices.$md + 1px)) and (max-width: devices.$lg) {
-        @content;
-    }
+	@media only screen and (min-width: (devices.$md + 1px)) and (max-width: devices.$lg) {
+		@content;
+	}
 }
 
 @mixin laptop {
-    @media only screen and (min-width: (devices.$lg + 1px)) and (max-width: devices.$xl) {
-        @content;
-    }
+	@media only screen and (min-width: (devices.$lg + 1px)) and (max-width: devices.$xl) {
+		@content;
+	}
 }
 
 @mixin desktop {
-    @media only screen and (min-width: (devices.$xl + 1px)) {
-        @content;
-    }
+	@media only screen and (min-width: (devices.$xl + 1px)) {
+		@content;
+	}
 }
 
 // Styles for headings, subheadings and paragraph text
 @mixin text-modifier {
-    &__heading {
-        text-align: center;
-        font-size: 5rem;
-        margin-bottom: 1rem;
-        font-family: typography.$heading-font;
-        color: palette.$primary-color;
+	&__heading {
+		text-align: center;
+		font-size: 5rem;
+		margin-bottom: 1rem;
+		font-family: typography.$heading-font;
+		color: palette.$primary-color;
 
-        @include phone {
-            font-size: 3rem;
-        }
-        @include tablet {
-            font-size: 3.5rem;
-        }
-        @include tablet-landscape {
-            font-size: 4rem;
-        }
-        @include laptop {
-            font-size: 4.5rem;
-        }
-        @include desktop {
-            font-size: 5rem;
-        }
-    }
+		@include phone {
+			font-size: 3rem;
+		}
+		@include tablet {
+			font-size: 3.5rem;
+		}
+		@include tablet-landscape {
+			font-size: 4rem;
+		}
+		@include laptop {
+			font-size: 4.5rem;
+		}
+		@include desktop {
+			font-size: 5rem;
+		}
+	}
 
-    &__subheading {
-        font-family: typography.$heading-font;
-        color: palette.$secondary-color;
+	&__subheading {
+		font-family: typography.$heading-font;
+		color: palette.$secondary-color;
 
-        @include phone {
-            font-size: 1.5rem;
+		@include phone {
+			font-size: 1.5rem;
 
-            &--larger {
-                font-size: 2rem;
-            }
-        }
-        @include tablet {
-            font-size: 1.5rem;
+			&--larger {
+				font-size: 2rem;
+			}
+		}
+		@include tablet {
+			font-size: 1.5rem;
 
-            &--larger {
-                font-size: 2.5rem;
-            }
-        }
-        @include tablet-landscape {
-            font-size: 2rem;
+			&--larger {
+				font-size: 2.5rem;
+			}
+		}
+		@include tablet-landscape {
+			font-size: 2rem;
 
-            &--larger {
-                font-size: 3rem;
-            }
-        }
-        @include laptop {
-            font-size: 2rem;
+			&--larger {
+				font-size: 3rem;
+			}
+		}
+		@include laptop {
+			font-size: 2rem;
 
-            &--larger {
-                font-size: 3rem;
-            }
-        }
-        @include desktop {
-            font-size: 2rem;
+			&--larger {
+				font-size: 3rem;
+			}
+		}
+		@include desktop {
+			font-size: 2rem;
 
-            &--larger {
-                font-size: 3rem;
-            }
-        }
-    }
+			&--larger {
+				font-size: 3rem;
+			}
+		}
+	}
 
-    &__text {
-        color: palette.$text-color;
-        line-height: 1.5rem;
+	&__text {
+		color: palette.$text-color;
+		line-height: 1.5rem;
 
-        &--fade {
-            color: palette.$fade-color;
-        }
-
-    }
+		&--fade {
+			color: palette.$fade-color;
+		}
+	}
 }
 
 @mixin squish {
-    @include phone {
-        width: 90%;
-    }
-    @include tablet {
-        width: 80%;
-    }
-    @include tablet-landscape {
-        width: 75%;
-    }
-    @include laptop {
-        width: 60%;
-    }
-    @include desktop {
-        width: 50%;
-    }
+	@include phone {
+		width: 90%;
+	}
+	@include tablet {
+		width: 80%;
+	}
+	@include tablet-landscape {
+		width: 75%;
+	}
+	@include laptop {
+		width: 60%;
+	}
+	@include desktop {
+		width: 50%;
+	}
 }
