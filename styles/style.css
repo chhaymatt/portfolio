@@ -602,7 +602,7 @@
   width: 100%;
 }
 .projects__lower p {
-  border: 1px solid rgb(48, 52, 63);
+  border: 1px solid #cccccc;
   padding: 0.5rem 1rem;
   border-radius: 1rem;
 }
