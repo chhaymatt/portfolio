@@ -7,7 +7,7 @@
 
 ![Preview of Matthew Chhay's Portfolio](https://i.imgur.com/qJNWw8g.png)
 
-## Table of contents <!-- omit in toc -->
+## Table of Contents <!-- omit in toc -->
 
 - [Introduction](#introduction)
 - [Technologies Used](#technologies-used)
@@ -70,9 +70,14 @@ This is my portfolio to showcase what I have been learning and to give visitors 
 
 ## Tools Used
 
--   VS Code Extension: Live Server [Get Live Server Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
--   VS Code Extension: Prettier [Get Prettier Extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
--   Font Awesome Icons [Get Font Awesome Icons](https://fontawesome.com/start)
+-   Live Server - to see live locally without refreshing. [Get Live Server Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+-   Prettier - to tidy up code in spacing and structure. [Get Prettier Extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+-   Font Awesome - a library of icons that can be imported easily. [Get Font Awesome icons](https://fontawesome.com/start)
+-   Hero Patterns - a collection of background patterns. [Get patterns via Hero Patterns](https://heropatterns.com/)
+-   Favicon.io - generate a favicon. [Generate favicon](https://favicon.io/favicon-generator/)
+-   Meta Tags - generate metadata. [Generate metadata](https://metatags.io/)
+-   Coolors - colour palette generator. [Generate colour palette](https://coolors.co/generate)
+-   Google Fonts - a library of free fonts. [Get Google Fonts](https://fonts.google.com/)
 
 ## Project Status
 
