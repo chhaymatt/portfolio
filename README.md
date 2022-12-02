@@ -10,8 +10,8 @@
 ## Table of Contents <!-- omit in toc -->
 
 - [Introduction](#introduction)
-- [Technologies Used](#technologies-used)
 - [Features](#features)
+- [Technologies Used](#technologies-used)
 - [Screenshots](#screenshots)
 - [MVP](#mvp)
 - [Setup](#setup)
@@ -25,12 +25,6 @@
 
 This is my portfolio to showcase what I have been learning and to give visitors an insight into who I am. The portfolio will be updated when I complete projects or learn new skills.
 
-## Technologies Used
-
--   HTML
--   SCSS/CSS
--   JavaScript
-
 ## Features
 
 -   A landing, about, skills, projects and contact sections
@@ -38,6 +32,12 @@ This is my portfolio to showcase what I have been learning and to give visitors 
 -   Responsive design
 -   Footer uses the current year
 -   Modules, Mixins and Partials are used for styling organisation
+
+## Technologies Used
+
+-   HTML
+-   SCSS/CSS
+-   JavaScript
 
 ## Screenshots
 
