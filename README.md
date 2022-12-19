@@ -9,17 +9,17 @@
 
 ## Table of Contents <!-- omit in toc -->
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Screenshots](#screenshots)
-- [MVP](#mvp)
-- [Setup](#setup)
-  - [For viewing locally](#for-viewing-locally)
-  - [For further development](#for-further-development)
-- [Tools Used](#tools-used)
-- [Project Status](#project-status)
-- [Room for Improvement](#room-for-improvement)
+-   [Introduction](#introduction)
+-   [Features](#features)
+-   [Technologies Used](#technologies-used)
+-   [Screenshots](#screenshots)
+-   [MVP](#mvp)
+-   [Setup](#setup)
+    -   [For viewing locally](#for-viewing-locally)
+    -   [For further development](#for-further-development)
+-   [Tools Used](#tools-used)
+-   [Project Status](#project-status)
+-   [Room for Improvement](#room-for-improvement)
 
 ## Introduction
 
