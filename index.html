@@ -107,7 +107,7 @@
 				</div>
 				<img
 					class="home__image"
-					src="./styles/images/home/matt.jpg"
+					src="./styles/images/home/matt.webp"
 					alt="Matthew Chhay" />
 			</section>
 
@@ -217,13 +217,15 @@
 					<div class="skills__pair">
 						<img
 							class="skills__icon"
-							src="/styles/images/skills/logo-typescript.png" />
+							src="/styles/images/skills/logo-typescript.webp"
+							alt="TypeScript Logo" />
 						<p class="skills__text">TypeScript</p>
 					</div>
 					<div class="skills__pair">
 						<img
 							class="skills__icon"
-							src="/styles/images/skills/logo-nestjs.png" />
+							src="/styles/images/skills/logo-nestjs.webp"
+							alt="NestJS Logo" />
 						<p class="skills__text">NestJS</p>
 					</div>
 				</div>
@@ -242,28 +244,65 @@
 				<h1 class="projects__heading">Projects</h1>
 				<div class="projects__group">
 					<article class="projects__article">
-						<h2 class="projects__subheading">Book Search</h2>
+						<h2 class="projects__subheading">employeeCreator</h2>
 						<p class="projects__text">
-							An app where a user can search for books from Google
-							Book's API using React JS and React Router.
+							An employee tracking system where people can view,
+							add, edit and remove employee details. Built using
+							React TypeScript and Spring Boot Java.
 						</p>
 						<a
-							target="_blank"
-							href="https://chhaymatt.github.io/books/">
+							href="https://ec.matthewchhay.com/"
+							aria-label="Open employeeCreator Demo">
 							<img
-								src="./styles/images/projects/booksearch.png"
-								alt="Book Search" />
+								src="./styles/images/projects/employeeCreator.webp"
+								alt="employeeCreator screenshot"
+								loading="lazy" />
 						</a>
 						<div class="projects__lower">
 							<div>
 								<a
 									target="_blank"
-									href="https://chhaymatt.github.io/books/">
+									href="https://ec.matthewchhay.com/"
+									aria-label="Open employeeCreator Demo">
 									<i class="fa-solid fa-circle-play"></i>
 								</a>
 								<a
 									target="_blank"
-									href="https://github.com/chhaymatt/books">
+									href="https://github.com/chhaymatt/employeeCreator"
+									aria-label="Open employeeCreator GitHub repository">
+									<i class="fa-brands fa-github"></i>
+								</a>
+							</div>
+							<div><p>Responsive on all devices</p></div>
+						</div>
+					</article>
+					<article class="projects__article">
+						<h2 class="projects__subheading">Book Search</h2>
+						<p class="projects__text">
+							An app where a user can search for books from Google
+							Book's API using React JavaScript and React Router.
+						</p>
+						<a
+							target="_blank"
+							href="https://chhaymatt.github.io/books/"
+							aria-label="Open Book Search Demo">
+							<img
+								src="./styles/images/projects/booksearch.webp"
+								alt="Book Search screenshot"
+								loading="lazy" />
+						</a>
+						<div class="projects__lower">
+							<div>
+								<a
+									target="_blank"
+									href="https://chhaymatt.github.io/books/"
+									aria-label="Open Book Search Demo">
+									<i class="fa-solid fa-circle-play"></i>
+								</a>
+								<a
+									target="_blank"
+									href="https://github.com/chhaymatt/books"
+									aria-label="Open Book Search GitHub repository">
 									<i class="fa-brands fa-github"></i>
 								</a>
 							</div>
@@ -274,54 +313,30 @@
 						<h2 class="projects__subheading">eShop</h2>
 						<p class="projects__text">
 							An eCommerce website where a user can view products.
-							Built using React JS, React Router and Google
-							Firestore database.
+							Built using React JavaScript, React Router and
+							Google Firestore database.
 						</p>
 						<a
 							target="_blank"
-							href="https://chhaymatt.github.io/plushpals">
+							href="https://chhaymatt.github.io/plushpals"
+							aria-label="Open eShop Demo">
 							<img
-								src="./styles/images/projects/eShop.png"
-								alt="eShop" />
+								src="./styles/images/projects/eShop.webp"
+								alt="eShop screenshot"
+								loading="lazy" />
 						</a>
 						<div class="projects__lower">
 							<div>
 								<a
 									target="_blank"
-									href="https://chhaymatt.github.io/plushpals">
+									href="https://chhaymatt.github.io/plushpals"
+									aria-label="Open eShop Demo">
 									<i class="fa-solid fa-circle-play"></i>
 								</a>
 								<a
 									target="_blank"
-									href="https://github.com/chhaymatt/plushpals">
-									<i class="fa-brands fa-github"></i>
-								</a>
-							</div>
-							<div><p>Responsive on all devices</p></div>
-						</div>
-					</article>
-					<article class="projects__article">
-						<h2 class="projects__subheading">employeeCreator</h2>
-						<p class="projects__text">
-							An employee tracking system where people can view,
-							add, edit and remove employee details. Built using
-							React TypeScript and Spring Boot Java.
-						</p>
-						<a href="https://ec.matthewchhay.com/">
-							<img
-								src="./styles/images/projects/employeeCreator.png"
-								alt="employeeCreator" />
-						</a>
-						<div class="projects__lower">
-							<div>
-								<a
-									target="_blank"
-									href="https://ec.matthewchhay.com/">
-									<i class="fa-solid fa-circle-play"></i>
-								</a>
-								<a
-									target="_blank"
-									href="https://github.com/chhaymatt/employeeCreator">
+									href="https://github.com/chhaymatt/plushpals"
+									aria-label="Open eShop GitHub repository">
 									<i class="fa-brands fa-github"></i>
 								</a>
 							</div>
@@ -332,26 +347,30 @@
 						<h2 class="projects__subheading">fakeOS</h2>
 						<p class="projects__text">
 							Replicating the layout and format of the Mac
-							operating system using HTML, SCSS, and JS. Must be
-							viewed on a computer.
+							operating system using HTML, SCSS, and JavaScript.
+							Must be viewed on a computer.
 						</p>
 						<a
 							target="_blank"
-							href="https://chhaymatt.github.io/fakeOS/">
+							href="https://chhaymatt.github.io/fakeOS/"
+							aria-label="Open fakeOS Demo">
 							<img
-								src="./styles/images/projects/fakeOS.png"
-								alt="fakeOS" />
+								src="./styles/images/projects/fakeOS.webp"
+								alt="fakeOS screenshot"
+								loading="lazy" />
 						</a>
 						<div class="projects__lower">
 							<div>
 								<a
 									target="_blank"
-									href="https://chhaymatt.github.io/fakeOS/">
+									href="https://chhaymatt.github.io/fakeOS/"
+									aria-label="Open fakeOS Demo">
 									<i class="fa-solid fa-circle-play"></i>
 								</a>
 								<a
 									target="_blank"
-									href="https://github.com/chhaymatt/fakeOS">
+									href="https://github.com/chhaymatt/fakeOS"
+									aria-label="Open fakeOS GitHub repository">
 									<i class="fa-brands fa-github"></i>
 								</a>
 							</div>
@@ -362,25 +381,29 @@
 						<h2 class="projects__subheading">Morse Translator</h2>
 						<p class="projects__text">
 							Translating English text into International Morse
-							Code and vice versa using JS methods.
+							Code and vice versa using JavaScript methods.
 						</p>
 						<a
 							target="_blank"
-							href="https://chhaymatt.github.io/morsetranslator/">
+							href="https://chhaymatt.github.io/morsetranslator/"
+							aria-label="Open Morse Translator Demo">
 							<img
-								src="./styles/images/projects/morsetranslator.png"
-								alt="Morse Translator" />
+								src="./styles/images/projects/morsetranslator.webp"
+								alt="Morse Translator screenshot"
+								loading="lazy" />
 						</a>
 						<div class="projects__lower">
 							<div>
 								<a
 									target="_blank"
-									href="https://chhaymatt.github.io/morsetranslator/">
+									href="https://chhaymatt.github.io/morsetranslator/"
+									aria-label="Open Morse Translator Demo">
 									<i class="fa-solid fa-circle-play"></i>
 								</a>
 								<a
 									target="_blank"
-									href="https://github.com/chhaymatt/morsetranslator">
+									href="https://github.com/chhaymatt/morsetranslator"
+									aria-label="Open Morse Translator GitHub repository">
 									<i class="fa-brands fa-github"></i>
 								</a>
 							</div>
@@ -395,10 +418,13 @@
 							jobs or temporary workers. Built using Spring Boot,
 							Java and MySQL.
 						</p>
-						<a href="https://github.com/chhaymatt/resourcing-api">
+						<a
+							href="https://github.com/chhaymatt/resourcing-api"
+							aria-label="Open Resourcing API GitHub repository">
 							<img
-								src="./styles/images/projects/resourcing-api.png"
-								alt="Resourcing API" />
+								src="./styles/images/projects/resourcing-api.webp"
+								alt="Resourcing API screenshot"
+								loading="lazy" />
 						</a>
 						<div class="projects__lower">
 							<div>
@@ -407,7 +433,8 @@
 								</a> -->
 								<a
 									target="_blank"
-									href="https://github.com/chhaymatt/resourcing-api">
+									href="https://github.com/chhaymatt/resourcing-api"
+									aria-label="Open Resourcing API GitHub repository">
 									<i class="fa-brands fa-github"></i>
 								</a>
 							</div>
@@ -421,10 +448,13 @@
 							A recreated version of the game Minesweeper to be
 							played in the console built using Java.
 						</p>
-						<a href="https://github.com/chhaymatt/minesweeper">
+						<a
+							href="https://github.com/chhaymatt/minesweeper"
+							aria-label="Open Minesweeper GitHub repository">
 							<img
-								src="./styles/images/projects/minesweeper.png"
-								alt="Minesweeper" />
+								src="./styles/images/projects/minesweeper.webp"
+								alt="Minesweeper screenshot"
+								loading="lazy" />
 						</a>
 						<div class="projects__lower">
 							<div>
@@ -433,7 +463,8 @@
 								</a> -->
 								<a
 									target="_blank"
-									href="https://github.com/chhaymatt/minesweeper">
+									href="https://github.com/chhaymatt/minesweeper"
+									aria-label="Open Minesweeper GitHub repository">
 									<i class="fa-brands fa-github"></i>
 								</a>
 							</div>
@@ -458,7 +489,7 @@
 							<p>@matthewchhay</p>
 						</div>
 					</a>
-					<a
+					<div
 						class="tooltip"
 						onclick="copyText()"
 						onmouseout="outFunc()">
@@ -469,7 +500,7 @@
 							<i class="fa-solid fa-envelope"></i>
 							<p>Email me</p>
 						</div>
-					</a>
+					</div>
 
 					<a
 						class="tooltip"

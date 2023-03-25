@@ -8,11 +8,17 @@
 	@include mixin.responsive-sections;
 	@include mixin.text-modifier;
 
+	&__heading {
+		padding-top: 5rem;
+	}
+
 	&__group {
 		@include mixin.flex-padding-modifier(wrap, row, center, center, 0);
 		width: 100%;
 
+		div,
 		a {
+			padding: 1rem 2rem;
 			color: palette.$text-color;
 			text-decoration: none;
 			font-size: 5rem;
